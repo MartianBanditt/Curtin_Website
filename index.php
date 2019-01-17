@@ -11,13 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Nationwide - Homepage</title>
     <!-- bootstrap styles -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <?php style_sheets(); ?>
 
-    <style>
-
-
-    </style>
 </head>
 
 <body>
@@ -97,9 +92,8 @@
     </div>
 
     <!-- Loading scripts last -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <?php scripts(); ?>
+    
 </body>
 
 </html>

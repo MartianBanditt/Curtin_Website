@@ -1,17 +1,27 @@
 <?php
 
-// main navigation
+// Stylesheets
+function style_sheets(){
+    echo <<<STYLESHEETS
+    
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+STYLESHEETS;
+}
+
+// Header content
 function header_content(){
     echo <<<HEADERCONTENT
 
-        '<div class="row">
+        <div class="row">
             <div class="col">
                 <img src="media/nationwideslogan.png" alt="nationwide logo">
             </div>
             <div class="col align-self-center">
                 <div>Social media <a href="facebook.com">facebook</a> - <a href="twitter.com">Twitter</a></div>
             </div>
-        </div>'
+        </div>
 
 HEADERCONTENT;
 }
@@ -19,7 +29,7 @@ HEADERCONTENT;
 // main navigation
 function main_nav(){
     echo <<<NAV
-     '<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <span class="navbar-toggler-icon"></span>
@@ -55,20 +65,34 @@ function main_nav(){
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-        </nav>'
+        </nav>
 
 NAV;
 }
 
-// main navigation
+// footer content
 function footer(){
     echo <<<FOOTER
-        '<div class="container">
+    
+        <div class="container">
             <footer>
                 <div>This is the footer</div>
             </footer>
-        </div>'
+        </div>
 
 FOOTER;
 }
+
+// javascript files for footer navigation
+function scripts(){
+    echo <<<SCRIPTS
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+SCRIPTS;
+}
+
+
 ?>
