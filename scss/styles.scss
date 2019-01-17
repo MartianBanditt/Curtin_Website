@@ -1,0 +1,43 @@
+// Custom.scss
+// Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$bg-color: white;
+$white-text: #fff;
+$bg-panel-b: #02529f;
+
+//background images
+$front-bg: url("../media/test.png");
+;
+
+// colors
+$bg-color-blue: #02529f;
+
+
+body {
+    background: $bg-color;
+}
+
+
+#home-bg-img {
+    color: $white-text;
+    background-image: $front-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.jumbotron{
+    bg-color: #343434;
+}
+
+.bg-panel-b{
+    background: linear-gradient(45deg, $bg-panel-b 0%, #0070cd 100%);
+}
+
+.full-width-background.bg-blue{
+    background-color: $bg-color-blue;
+    color: white;
+}
