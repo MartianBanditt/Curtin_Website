@@ -13,7 +13,9 @@ $front-bg: url("../media/test.png");
 
 // colors
 $bg-color-blue: #02529f;
+$bg-third: #c0cedd;
 
+.bg-third{background-color:$bg-third;}
 
 body {
     background: $bg-color;
@@ -41,6 +43,14 @@ body {
     background-color: $bg-color-blue;
     color: white;
 }
+
+.full-width-background.title{
+    background-color: #c0cedd;
+    padding:25px;
+    margin: 0px;
+}
+
+
 
 /* Section styles
 ----------------------- */
@@ -126,7 +136,7 @@ form label {
     font-weight: 700;
 }
 
-.form-control {
+.form .form-control {
     border: 1px solid #e1e1e1;
     padding: 10px;
     margin-bottom: 20px;
@@ -135,6 +145,14 @@ form label {
     box-sizing: border-box;
     height: 45px;
     width: 100%;
+}
+
+#cust-message.form-control{
+    height:100%;
+}
+
+.form-control.search{
+    
 }
 
 .form-control:active,

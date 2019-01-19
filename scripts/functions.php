@@ -61,7 +61,7 @@ function main_nav(){
 
                 </ul>
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             </div>
@@ -136,7 +136,7 @@ function contact_form(){
             </fieldset>
 
             <div class="submit">
-                <input class="btn btn-primary btn-lg" type="submit" name="order" value="Order">
+                <input class="btn btn-primary btn-lg" type="submit" name="order" value="Submit">
             </div>
         </form>
     
