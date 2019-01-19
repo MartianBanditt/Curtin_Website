@@ -6,6 +6,7 @@ function style_sheets(){
     
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 STYLESHEETS;
 }
@@ -18,9 +19,7 @@ function header_content(){
             <div class="col my-5">
                 <img src="media/nationwideslogan.png" alt="nationwide logo">
             </div>
-            <div class="col align-self-center">
-                <div>Social media <a href="facebook.com">facebook</a> - <a href="twitter.com">Twitter</a></div>
-            </div>
+
         </div>
 
 HEADERCONTENT;
@@ -77,7 +76,25 @@ function footer(){
     
         <div class="container">
             <footer>
-                <div>This is the footer</div>
+                <h3>Follow Us</h3>
+                <div class=font-awesome>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="row mt-5">
+                    <ul class="nav nav-bottom col">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cookies</a>
+                        </li>
+                    </ul>
+                    <p class="col">© 2019 Nationwide ABN 11 123 123 123</p>
+                </div>
             </footer>
         </div>
 

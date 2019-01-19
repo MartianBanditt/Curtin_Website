@@ -51,11 +51,10 @@ body {
 }
 
 
-
 /* Section styles
 ----------------------- */
 .full-width-background{
-    margin:50px 0px;
+
 }
 
 /* Navbar styles
@@ -113,6 +112,17 @@ nav li:hover a::before {
     transform: scale(1);
 }
 
+.fab {
+  padding-right: 20px;
+  font-size: 45px;
+  color:#fff;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
 
 /* front page styles
 ----------------------- */
@@ -162,4 +172,21 @@ form label {
     outline: none;
     color: $bg-color-blue;
     border-color: $bg-color-blue;
+}
+
+/* footer styles 
+------------------ */
+
+footer .row.mt-5 {
+    border-top: 1px solid;
+}
+
+footer .row.mt-5 p {
+    text-align:right;
+}
+
+.nav-bottom a{
+    color:white;
+    padding-left:0px;
+    pading-right: 15px;
 }
