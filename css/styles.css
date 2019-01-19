@@ -6932,7 +6932,7 @@ body {
   background-size: cover; }
 
 .jumbotron {
-  bg-color: #343434; }
+  background-color: #343434; }
 
 .bg-panel-b {
   background: linear-gradient(45deg, #02529f 0%, #0070cd 100%); }
@@ -6940,3 +6940,91 @@ body {
 .full-width-background.bg-blue {
   background-color: #02529f;
   color: white; }
+
+/* Section styles
+----------------------- */
+.full-width-background {
+  margin: 50px 0px; }
+
+/* Navbar styles
+----------------------- */
+.nav-background {
+  background-color: #02529f;
+  color: white; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: #fff; }
+
+.navbar-toggler {
+  margin: 10px 0px; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0.05rem 0rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-right: 0px;
+  padding-left: 0px; }
+
+/* Hover effect styling */
+nav a {
+  position: relative; }
+
+/* Hover effect styling, positions and applies scaling and transition of underline */
+nav a::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: 0.7s; }
+
+/* Border styling for the transform */
+nav a::before {
+  border-bottom: 1px solid #fff;
+  transform-origin: bottom left; }
+
+/* Applies transform when the anchor link is hovered over */
+nav li:hover a::before {
+  transform: scale(1); }
+
+/* front page styles
+----------------------- */
+#front-help > div:first-of-type > div {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+#front-help > div:last-of-type div {
+  min-height: 225px;
+  background-color: #9e9e9e; }
+
+/* form styles
+----------------------- */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: 700; }
+
+.form-control {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #4c4c4c;
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%; }
+
+.form-control:active,
+.form-control:focus,
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  color: #02529f;
+  border-color: #02529f; }
