@@ -26,7 +26,7 @@
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
-        <div class="full-width-background">
+        <div class="full-width-background title">
             <section id="header" class="container">
 
                 <h1>Contact us</h1>
@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col">
                         <h2>We're here to help</h2>
-                        <p>What ever you need, one of trained (something)? is here and waiting to here from you.</p>
+                        <p>What ever you need, one of trained customer service representatives is here and waiting to here from you.</p>
                     </div>
 
                 </div>
@@ -47,22 +47,29 @@
 
         <div class="full-width-background">
             <div class="container">
-                <div class="row">
+                <div class="row mb-5">
 
-                    <div class="col">
-                        <h3>Call us</h3>
-                        <a href="tel:1300000000" class="btn btn-primary btn-lg">1300 000 000</a>
+                    <div class="col bg-primary p-5 text-white">
+                        <h3>Customer Service</h3>
+                        <p>Have a question about our products or services? Or want to leave us feedback, good or bad?</p>
+                        <p>Our team is here to listen and provide answers.</p>
                     </div>
-                    <div class="col">
-                        <h3>Email</h3>
+                    <div class="col bg-third p-5">
+                        <h4>Call us</h4>
+                        <a href="tel:1300000000" class="btn btn-primary btn-lg">1300 000 000</a>
+                        <p>Business hours: 9 am - 5 pm weekdays</p>
+                        
+                        <h4>Email us</h4>
                         <a href="mailto:nationwidedummyemail@email.com" class="btn btn-primary btn-lg">nationwidedummyemail@email.com</a>
+                        
+                        <h4>Send us a letter</h4>
+                        <p>1, Nationwide, Nation st, UK, 39992</p>
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-md-6 bg-third p-5">
 
-                        <h3>Or use the form below</h3>
                         <?php contact_form(); ?>
                     </div>
                 </div>
