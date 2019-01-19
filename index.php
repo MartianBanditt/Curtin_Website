@@ -23,9 +23,7 @@
     </header>
 
     <!-- main navigation -->
-    <div class="full-width-background">
-        <?php main_nav(); ?>
-    </div>
+    <?php main_nav(); ?>
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
@@ -36,7 +34,6 @@
                     <h2>We are more than just a Bank</h2>
                     <p>We're insurance, technology, investment and banking.</p>
                     <a href="/questionaires" class="btn btn-primary .btn-lg">Help us find you the right service</a>
-                    <a href="/contact" class="btn btn-secondary .btn-lg">Talk to us</a>
 
                 </section>
             </div>
@@ -45,26 +42,28 @@
         <!-- Call to aciton section, funnels through to questionaires -->
         <div class="full-width-background">
             <div class="container">
-                <div class="row mgtb-4">
+                <div class="row" id="front-help">
 
                     <div class="col">
-                        <div>
-                            <h2>Need help understanding your options</h2>
-                            <p>We have you covered with a load of information around the basics from</p>
-                            <ul>
-                                <li>Investing</li>
-                                <li>Index funds</li>
-                                <li>Credit types</li>
-                            </ul>
-                            <a href="/basics" class="btn btn-primary .btn-lg">Find out more</a>
+                        <div class="bg-secondary p-5">
+                            <div class="">
+                                <h2>Need help understanding your options?</h2>
+                                <p>We have you covered with a load of information around the basics from</p>
+                                <ul>
+                                    <li>Investing</li>
+                                    <li>Index funds</li>
+                                    <li>Credit types</li>
+                                </ul>
+                                <a href="/basics" class="btn btn-primary btn-lg">Find out more</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div>
+                        <div class="mb-5 p-5">
                             <h3>Technology</h3>
                         </div>
-                        <div>
+                        <div class="p-5">
                             <h3>Security</h3>
                         </div>
                     </div>
@@ -93,7 +92,7 @@
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>
-    
+
 </body>
 
 </html>

@@ -21,9 +21,7 @@
     </header>
 
     <!-- main navigation -->
-    <div class="full-width-background">
-        <?php main_nav(); ?>
-    </div>
+    <?php main_nav(); ?>
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->

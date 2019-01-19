@@ -22,9 +22,7 @@
     </header>
 
     <!-- main navigation -->
-    <div class="full-width-background">
-        <?php main_nav(); ?>
-    </div>
+    <?php main_nav(); ?>
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
@@ -53,11 +51,11 @@
 
                     <div class="col">
                         <h3>Call us</h3>
-                        <a href="tel:1300000000" class="btn btn-primary .btn-lg">1300 000 000</a>
+                        <a href="tel:1300000000" class="btn btn-primary btn-lg">1300 000 000</a>
                     </div>
                     <div class="col">
                         <h3>Email</h3>
-                        <a href="mailto:nationwidedummyemail@email.com" class="btn btn-primary .btn-lg">nationwidedummyemail@email.com</a>
+                        <a href="mailto:nationwidedummyemail@email.com" class="btn btn-primary btn-lg">nationwidedummyemail@email.com</a>
                     </div>
 
                 </div>
@@ -65,6 +63,7 @@
                     <div class="col">
 
                         <h3>Or use the form below</h3>
+                        <?php contact_form(); ?>
                     </div>
                 </div>
             </div>
