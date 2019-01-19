@@ -26,7 +26,7 @@
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
-        <div class="full-width-background">
+        <div class="full-width-background title">
             <section id="header" class="container">
 
                 <h1>Card types we offer</h1>
