@@ -72,11 +72,11 @@
             </div>
         </div>
 
-        <div class="full-width-background">
+        <div class="full-width-background my-5">
             <div class="container">
                 <h2>We help people every day</h2>
-                <p>Find out how we help them achieve their goals, manage their finances, and make decisions that are best for them.</p>
-                <a href="/basics" class="btn btn-primary .btn-lg">Find out more</a>
+                <p>Find out how we help them achieve their goals, manage their finances, and make decisions that work for them.</p>
+                <a href="/basics" class="btn btn-primary btn-lg">Find out more</a>
 
             </div>
         </div>

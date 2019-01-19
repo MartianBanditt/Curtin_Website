@@ -85,7 +85,8 @@ function footer(){
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="row mt-5">
-                    <ul class="nav nav-bottom col">
+                <div class="col">
+                    <ul class="nav nav-bottom">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Privacy</a>
                         </li>
@@ -93,7 +94,10 @@ function footer(){
                             <a class="nav-link" href="#">Cookies</a>
                         </li>
                     </ul>
-                    <p class="col">© 2019 Nationwide ABN 11 123 123 123</p>
+                    </div>
+                    <div class="col">
+                    <p class="">© 2019 Nationwide ABN 11 123 123 123</p>
+                    </div>
                 </div>
             </footer>
         </div>

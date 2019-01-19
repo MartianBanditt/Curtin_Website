@@ -36,7 +36,7 @@
         <div class="full-width-background">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col my-5">
                         <h2>We're here to help</h2>
                         <p>What ever you need, one of trained customer service representatives is here and waiting to here from you.</p>
                     </div>

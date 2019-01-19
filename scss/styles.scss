@@ -177,10 +177,6 @@ form label {
 /* footer styles 
 ------------------ */
 
-footer .row.mt-5 {
-    border-top: 1px solid;
-}
-
 footer .row.mt-5 p {
     text-align:right;
 }
@@ -189,4 +185,13 @@ footer .row.mt-5 p {
     color:white;
     padding-left:0px;
     pading-right: 15px;
+}
+
+footer .row.mt-5:before {
+    width: calc(100% - 30px);
+    padding: 20px 0px;
+    content: "";
+    border-top: 1px solid;
+    box-sizing: border-box;
+    margin: 0px auto;
 }
