@@ -91,6 +91,7 @@ function scripts(){
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
     
 SCRIPTS;
 }
@@ -161,13 +162,19 @@ function booking_form(){
                 </div>
 
                 <div class="mobile form-group">
-                    <label for="cust[mobile]">Mobile</label>
-                    <input name="cust[mobile]" class="form-control" type="tel" id="cust-mobile" placeholder="" />
+                    <label for="mobile">Mobile</label>
+                    <input name="mobile" class="form-control" type="tel" id="mobile" placeholder="" />
                 </div>
 
                 <div class="select-box form-group">
-                    <label for="seats[STA]">Adults</label>
-                    <select name="seats[STA]" id="seats[STA]">
+                    <label for="date">Date</label>
+                    <input name="date" class="form-control booking-date" type="date" id="date"  max="" required />
+                </div>
+                
+                
+                <div class="select-box form-group">
+                    <label for="time">Time</label>
+                    <select class="form-control" name="time" id="time">
                         <option value="" selected="selected">Please Select</option>
                         <option value="9">9:00am</option>
                         <option value="10">10:00am</option>

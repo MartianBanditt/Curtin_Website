@@ -11,7 +11,7 @@
     <title>Nationwide - Find a service</title>
     <!-- bootstrap styles -->
     <?php style_sheets(); ?>
-    
+
 </head>
 
 <body>
@@ -43,12 +43,15 @@
                     </div>
 
                 </div>
+
+                <?php booking_form(); ?>
             </div>
         </div>
 
+
+
     </main>
 
-    <!-- Footer should be consistent across pages so rendered from php file -->
     <!-- Footer should be consistent across pages so rendered from php file -->
     <div class="full-width-background bg-blue mt-5 p-5">
 
@@ -57,9 +60,8 @@
     </div>
 
     <!-- Loading scripts last -->
-    <!-- Loading scripts last -->
     <?php scripts(); ?>
-    
+
 </body>
 
 </html>
