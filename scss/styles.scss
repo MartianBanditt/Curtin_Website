@@ -14,6 +14,7 @@ $front-bg: url("../media/test.png");
 // colors
 $bg-color-blue: #02529f;
 $bg-third: #c0cedd;
+$bg-darkest-blue: #013260;
 
 .bg-third{background-color:$bg-third;}
 
@@ -39,8 +40,8 @@ body {
     background: linear-gradient(45deg, $bg-panel-b 0%, #0070cd 100%);
 }
 
-.full-width-background.bg-blue{
-    background-color: $bg-color-blue;
+.full-width-background.bg-darkest-blue{
+    background-color: $bg-darkest-blue;
     color: white;
 }
 

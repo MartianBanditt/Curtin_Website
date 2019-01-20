@@ -27,13 +27,13 @@
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
-        <div class="jumbotron" id="home-bg-img">
+        <div class="jumbotron mb-5" id="home-bg-img">
             <div class="container">
-                <section id="cta" class="col-sm-12 col-md-4 offset-md-1 bg-panel-b p-5">
+                <section id="cta" class="col-sm-12 col-md-5 offset-md-0 bg-panel-b p-5">
 
                     <h2>We are more than just a Bank</h2>
-                    <p>We're insurance, technology, investment and banking.</p>
-                    <a href="/questionaires" class="btn btn-primary .btn-lg">Help us find you the right service</a>
+                    <p class="my-4">We're insurance, technology, investment and banking.</p>
+                    <a href="/questionaires" class="btn btn-primary btn-lg">Help us find you the right service</a>
 
                 </section>
             </div>
@@ -74,9 +74,16 @@
 
         <div class="full-width-background my-5">
             <div class="container">
-                <h2>We help people every day</h2>
-                <p>Find out how we help them achieve their goals, manage their finances, and make decisions that work for them.</p>
-                <a href="/basics" class="btn btn-primary btn-lg">Find out more</a>
+                <div class="row no-gutters">
+                    <div class="col-md-8 p-5 bg-third">
+                        <h2>We help people every day</h2>
+                        <p>Find out how we help them achieve their goals, manage their finances, and make decisions that work for them.</p>
+                        <a href="/basics" class="btn btn-primary btn-lg">Find out more</a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="media/handsome-man-coffee-flipped.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -84,11 +91,8 @@
     </main>
 
     <!-- Footer should be consistent across pages so rendered from php file -->
-    <div class="full-width-background bg-blue mt-5 p-5">
+    <?php footer(); ?>
 
-        <?php footer(); ?>
-
-    </div>
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>
