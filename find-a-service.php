@@ -50,28 +50,45 @@
         </div>
 
         <div class="full-width-background my-5 py-5 bg-third">
-            <div class="container">
+            <div class="container accordion" id="accordionExample">
                 <!-- Question for user -->
                 <div class="row">
-                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius">Hi there! What type of card are you looking for today?</h2>
+                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius"><a href="#collapseOne" class="text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hi there! What type of card are you looking for today?</a></h2>
                 </div>
 
-                <div class="row justify-content-center mt-5 flex-width">
+                <div class="row justify-content-center mt-5 flex-width collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="col m-auto">
-                        <button type="button" class="btn btn-circle">Primary</button>
+                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Primary</button>
                     </div>
                     <div class="col m-auto">
-                        <button type="button" class="btn btn-circle">Primary</button>
+                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Primary</button>
+                    </div>
+                </div>
+
+                <!-- Question for user -->
+                <div class="row mt-5">
+                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius"><a href="#collapseTwo" id="headingTwo" data-toggle="collapse" class="text-white collapsed" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What are you most interested in?</a></h2>
+                </div>
+
+                <div class="row justify-content-center mt-5 flex-width collapse" id="collapseTwo" aria-labelledby="headingTwo" aria-expanded="false" data-parent="#accordionExample">
+                    <div class="col m-auto">
+                        <button type="button" class="btn btn-circle">Rewards and perks</button>
+                    </div>
+                    <div class="col m-auto">
+                        <button type="button" class="btn btn-circle">Saving money</button>
+                    </div>
+                    <div class="col m-auto">
+                        <button type="button" class="btn btn-circle">Ease of use</button>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
 
 
         <div class="full-width-background my-5">
             <div class="container">
-                <h3>For after a user has founda product they are interest in</h3>
+                <h3>For after a user has found a product they are interested in</h3>
                 <?php booking_form(); ?>
             </div>
         </div>
