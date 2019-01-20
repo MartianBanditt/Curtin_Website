@@ -27,7 +27,7 @@
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
         <div class="full-width-background title">
-            <section id="header" class="container">
+            <section id="title" class="container">
 
                 <h1>Find a product or service</h1>
             </section>
