@@ -74,7 +74,7 @@ NAV;
 // footer content
 function footer(){
     echo <<<FOOTER
-        <div class="full-width-background bg-darkest-blue mt-5 p-5">
+        <div class="full-width-background bg-darkest-blue mt-5 p-sm-5 p-3">
             <div class="container">
                 <footer>
                     <h3>Follow Us</h3>
