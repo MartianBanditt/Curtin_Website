@@ -33,17 +33,45 @@
             </section>
         </div>
 
-        <div class="full-width-background">
+
+        <div class="full-width-background my-5">
             <div class="container">
-                <div class="row">
-
-                    <div class="col">
-                        <h2>Help us find you a product or service</h2>
-                        <p>Choose what matters to you the most and we'll find a product that matches you</p>
+                <div class="row no-gutters">
+                    <div class="col-md-8 p-5 bg-third">
+                        <h2>Finding the right product or service can be tricky</h2>
+                        <p>That's why we've made it easy by allowing you to tell us what matters most to you and how you want to use our services.</p>
+                        <p>Pick from the options below and you'll match with the right product.</p>
                     </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="media/handsome-man-coffee-flipped.png" class="img-fluid" alt="Stock photo of handsome person, to be replaced">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="full-width-background my-5 py-5 bg-third">
+            <div class="container">
+                <!-- Question for user -->
+                <div class="row">
+                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius">Hi there! What type of card are you looking for today?</h2>
                 </div>
 
+                <div class="row justify-content-center mt-5 flex-width">
+                    <div class="col m-auto">
+                        <button type="button" class="btn btn-circle">Primary</button>
+                    </div>
+                    <div class="col m-auto">
+                        <button type="button" class="btn btn-circle">Primary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="full-width-background my-5">
+            <div class="container">
+                <h3>For after a user has founda product they are interest in</h3>
                 <?php booking_form(); ?>
             </div>
         </div>

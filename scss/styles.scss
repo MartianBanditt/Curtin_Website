@@ -196,3 +196,23 @@ footer .row.mt-5:before {
     box-sizing: border-box;
     margin: 0px auto;
 }
+
+/* Product finder page styles 
+------------------------ */
+
+.q-radius{
+    border-radius: 2em;
+}
+
+.flex-width > div{
+    flex-basis: 20%;
+    flex-grow:0;
+    text-align:center;
+}
+
+.btn-circle{
+    background-color:#fff;
+    border-radius: 200px;
+    width:200px;
+    height:200px;
+}
