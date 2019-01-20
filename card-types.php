@@ -49,12 +49,8 @@
     </main>
 
     <!-- Footer should be consistent across pages so rendered from php file -->
-    <!-- Footer should be consistent across pages so rendered from php file -->
-     <div class="full-width-background bg-blue mt-5 p-5">
+    <?php footer(); ?>
 
-        <?php footer(); ?>
-
-    </div>
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>

@@ -73,33 +73,34 @@ NAV;
 // footer content
 function footer(){
     echo <<<FOOTER
-    
-        <div class="container">
-            <footer>
-                <h3>Follow Us</h3>
-                <div class=font-awesome>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="row mt-5">
-                <div class="col">
-                    <ul class="nav nav-bottom">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cookies</a>
-                        </li>
-                    </ul>
+        <div class="full-width-background bg-darkest-blue mt-5 p-5">
+            <div class="container">
+                <footer>
+                    <h3>Follow Us</h3>
+                    <div class=font-awesome>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                    <div class="row mt-5">
                     <div class="col">
-                    <p class="">© 2019 Nationwide ABN 11 123 123 123</p>
+                        <ul class="nav nav-bottom">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cookies</a>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p class="">© 2019 Nationwide ABN 11 123 123 123</p>
+                        </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
 
 FOOTER;
