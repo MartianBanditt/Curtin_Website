@@ -1,5 +1,4 @@
 <?php
-
 // Stylesheets
 function style_sheets(){
     echo <<<STYLESHEETS
@@ -8,24 +7,18 @@ function style_sheets(){
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans" rel="stylesheet">
-
 STYLESHEETS;
 }
-
 // Header content
 function header_content(){
     echo <<<HEADERCONTENT
-
         <div class="row">
             <div class="col my-5">
                 <img src="media/nationwideslogan.png" alt="nationwide logo">
             </div>
-
         </div>
-
 HEADERCONTENT;
 }
-
 // main navigation
 function main_nav(){
     echo <<<NAV
@@ -58,7 +51,6 @@ function main_nav(){
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact us</a>
                     </li>
-
                 </ul>
             <form class="form-inline">
                 <input class="form-control search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,10 +59,8 @@ function main_nav(){
             </div>
         </nav>
         </div>
-
 NAV;
 }
-
 // footer content
 function footer(){
     echo <<<FOOTER
@@ -103,10 +93,8 @@ function footer(){
                 </footer>
             </div>
         </div>
-
 FOOTER;
 }
-
 // javascript files for footer navigation
 function scripts(){
     echo <<<SCRIPTS
@@ -118,12 +106,11 @@ function scripts(){
     
 SCRIPTS;
 }
-
 function contact_form(){
     echo <<<CONTACTFORM
     
         <!-- Customer details and payment details form section -->
-        <form class="form" action="" method="post">
+        <form class="form" action="scripts/email_form.php" method="post">
             <fieldset class="form-section customer-details">
                 <legend>Your details</legend>
                 
@@ -131,17 +118,14 @@ function contact_form(){
                     <label for="cust-name">Your Name</label>
                     <input name="cust-name" class="form-control" type="text" id="cust-name" pattern="[A-Za-z _.,-]{1,50}" title="Please only enter the Alphabet, spaces and .,- characters" placeholder="Your name..." required />
                 </div>
-
                 <div class="email form-group">
                     <label for="cust-email">Your email</label>
                     <input name="cust-email" class="form-control" type="email" id="cust-email" placeholder="Email we can contact you on." required />
                 </div>
-
                 <div class="mobile form-group">
                     <label for="cust[mobile]">Mobile</label>
-                    <input name="cust[mobile]" class="form-control" type="tel" id="cust-mobile" placeholder="" />
+                    <input name="cust-mobile" class="form-control" type="tel" id="cust-mobile" placeholder="" />
                 </div>
-
                 <div class="select-box form-group">
                     <label for="enquiry-type">Type of enquiry</label>
                     <select name="enquiry-type" class="form-control" id="enquiry-type">
@@ -151,13 +135,11 @@ function contact_form(){
                         <option value="complaint">Complaint</option>
                     </select>
                 </div>
-
                 <div class="text-area form-group">
                     <label for="cust-message">Message</label>
                     <textarea class="form-control" id="cust-message" name="cust-message" rows="5" cols="60" class="form-textarea"></textarea>
                 </div>
             </fieldset>
-
             <div class="submit">
                 <input class="btn btn-primary btn-lg" type="submit" name="order" value="Submit">
             </div>
@@ -165,7 +147,6 @@ function contact_form(){
     
 CONTACTFORM;
 }
-
 function booking_form(){
     echo <<<BOOKINGFORM
     
@@ -178,17 +159,14 @@ function booking_form(){
                     <label for="cust-name">Your Name</label>
                     <input name="cust-name" class="form-control" type="text" id="cust-name" pattern="[A-Za-z _.,-]{1,50}" title="Please only enter the Alphabet, spaces and .,- characters" placeholder="Your name..." required />
                 </div>
-
                 <div class="email form-group">
                     <label for="cust-email">Your email</label>
                     <input name="cust-email" class="form-control" type="email" id="cust-email" placeholder="Email we can contact you on." required />
                 </div>
-
                 <div class="mobile form-group">
                     <label for="mobile">Mobile</label>
                     <input name="mobile" class="form-control" type="tel" id="mobile" placeholder="" />
                 </div>
-
                 <div class="select-box form-group">
                     <label for="date">Date</label>
                     <input name="date" class="form-control booking-date" type="date" id="date"  max="" required />
@@ -210,7 +188,6 @@ function booking_form(){
                         <option value="17">5:00pm</option>
                     </select>
                 </div>
-
             <div class="submit">
                 <input class="btn btn-primary btn-lg" type="submit" name="order" value="Order">
             </div>
