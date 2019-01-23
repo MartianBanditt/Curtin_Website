@@ -2,9 +2,14 @@
 // Stylesheets
 function style_sheets(){
     echo <<<STYLESHEETS
-    
+        <!-- favons at various sizes -->
+        <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+        <!-- Stylsheets for inclusion -->
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">     
+        <!-- Webfonts -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans" rel="stylesheet">
 STYLESHEETS;
@@ -14,7 +19,9 @@ function header_content(){
     echo <<<HEADERCONTENT
         <div class="row">
             <div class="col my-5">
-                <img src="media/nationwideslogan.png" alt="nationwide logo">
+                <a href="index.php">
+                    <img src="media/nationwideslogan.png" alt="nationwide logo">
+                </a>
             </div>
         </div>
 HEADERCONTENT;
@@ -30,41 +37,66 @@ function main_nav(){
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item pr-sm-3 py-sm-0 py-3 active">
                         <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Services
+                    <li class="nav-item dropdown px-sm-3 py-sm-0 py-3">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="account-types.php">Account types</a>
+                            <a class="dropdown-item" href="services.php">Our products</a>                         
+                            <a class="dropdown-item" href="account-types.php">Financial tech</a>
                             <a class="dropdown-item" href="card-types.php">Card Types</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-sm-3 py-sm-0 py-3">
+                        <a class="nav-link" href="find-a-service.php">Find a product</a>
+                    </li>
+                    <li class="nav-item px-sm-3 py-sm-0 py-3">
+                        <a class="nav-link" href="faq.php">Faq</a>
+                    </li>
+                    <li class="nav-item px-sm-3 py-sm-0 py-3">
                         <a class="nav-link" href="about-us.php">About-us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="find-a-service.php">Find a service</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-sm-3 py-sm-0 py-3">
                         <a class="nav-link" href="contact.php">Contact us</a>
                     </li>
                 </ul>
             <form class="form-inline">
-                <input class="form-control search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control search d-inline-block mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success d-inline-block my-2 my-sm-0" type="submit">Search</button>
             </form>
             </div>
         </nav>
-        </div>
+    </div>
 NAV;
 }
 // footer content
 function footer(){
     echo <<<FOOTER
-        <div class="full-width-background bg-darkest-blue mt-5 p-sm-5 p-3">
+    <div class="full-width-background bg-fourth mt-5">
+        <div class="container p-5">
+        <h2 class="text-center p-3">We're here to help</h2>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <div><span class="fa-cta-front"><i class="fas fa-microphone"></i></span></div>
+                    <span>Talk to one of our experts</span>
+                    <div>
+                        <a href="contact.php" class="btn btn-primary btn-lg"><span>Contact</span></a>
+                    </div>
+                </div>
+    
+                <div class="col-xs-12 col-sm-6 col-md-4 mt-5 m-sm-0 text-center">
+                    <div><span class="fa-cta-front"><i class="fas fa-phone"></i></span></div>
+                    <span>Call <a href="tel:133000">13 00 00</a></span>
+                    <p>Mon-Fri 9am - 5pm (AEST/ADST)
+                    <br>Sat-Sun 9am - 5pm (AEST/ADST)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="full-width-background bg-darkest-blue p-sm-5 p-3">
             <div class="container">
                 <footer>
                     <h3>Follow Us</h3>
