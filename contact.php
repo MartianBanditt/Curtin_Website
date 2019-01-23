@@ -25,7 +25,7 @@
     <?php main_nav(); ?>
 
     <main>
-        <!-- Call to aciton section, funnels through to questionaires -->
+        <!-- Title section -->
         <div class="full-width-background title">
             <section id="title" class="container">
 
@@ -36,7 +36,7 @@
         <div class="full-width-background">
             <div class="container">
                 <div class="row">
-                    <div class="col my-5 p-sm-5">
+                    <div class="col my-5 p-sm-3">
                         <h2>We're here to help</h2>
                         <p>What ever you need, one of trained customer service representatives is here and waiting to here from you.</p>
                     </div>
@@ -47,9 +47,9 @@
 
         <div class="full-width-background">
             <div class="container">
-                <div class="row mb-sm-5 mb-3">
+                <div class="row mb-sm-5 no-gutters mb-3">
 
-                    <div class="col bg-primary mb-sm-0 mb-3 p-sm-5 p-3 text-white">
+                    <div class="col bg-secondary-blue mb-sm-0 mb-3 p-sm-5 p-3 text-white">
                         <h3>Customer Service</h3>
                         <p>Have a question about our products or services? Or want to leave us feedback, good or bad?</p>
                         <p>Our team is here to listen and provide answers.</p>
