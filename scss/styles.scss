@@ -15,23 +15,41 @@ $front-bg: url("../media/test.png");
 $bg-color-blue: #02529f;
 $bg-third: #c0cedd;
 $bg-darkest-blue: #013260;
+$bg-color-light-blue: #d0e7ff;
 
-.bg-third{background-color:$bg-third;}
-
-// fonts
-body{
-font-family: 'Open Sans', sans-serif;
+// Background colors
+.bg-secondary-blue{
+    background-color: $bg-color-blue;
 }
 
-h1,h2,h2,h3,h4,h5{
+.bg-third {
+    background-color: $bg-third;
+}
+
+.bg-fourth{
+    background-color: $bg-color-light-blue;
+}
+
+
+// fonts
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-#title h1{
+#title h1 {
     margin-bottom: 0px;
 }
 
-p{
+p {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
@@ -50,53 +68,55 @@ body {
 }
 
 
-.jumbotron{
+.jumbotron {
     background-color: #343434;
 }
 
-.bg-panel-b{
+.bg-panel-b {
     background: linear-gradient(45deg, $bg-panel-b 0%, #0070cd 100%);
 }
 
-.full-width-background.bg-darkest-blue{
+.full-width-background.bg-darkest-blue {
     background-color: $bg-darkest-blue;
     color: white;
 }
 
-.full-width-background.title{
+.full-width-background.title {
     background-color: #c0cedd;
-    padding:25px;
+    padding: 25px;
     margin: 0px;
 }
 
 
 /* Section styles
 ----------------------- */
-.full-width-background{
-
+.full-width-background {
+    
 }
 
 /* Navbar styles
 ----------------------- */
-.nav-background{
+.nav-background {
     background-color: $bg-color-blue;
     color: white;
+    box-shadow: 0px 4px 5px 2px #8a8a8a87;
+    position: relative;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    color:#fff;
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
-.navbar-dark .navbar-toggler{
+.navbar-dark .navbar-toggler {
     color: #fff;
     border-color: #fff;
 }
 
-.navbar-toggler{
-    margin:10px 0px;
+.navbar-toggler {
+    margin: 10px 0px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.05rem 0rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -127,33 +147,80 @@ nav a::before {
 }
 
 /* Applies transform when the anchor link is hovered over */
-nav li:hover a::before {
+nav ul > li:hover > a::before {
     transform: scale(1);
 }
 
-.fab {
-  padding-right: 20px;
-  font-size: 45px;
-  color:#fff;
+/* Dropdown styling */
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 5px 5px;
 }
 
+.fab {
+    padding-right: 20px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+
+/* font-awesome styles */
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 
 /* front page styles
 ----------------------- */
-#front-help > div:first-of-type > div{
-    display:flex;
+#front-help > div:first-of-type > div {
+    display: flex;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
 
-#front-help > div:last-of-type div{
-    min-height: 225px;
-    background-color: $background-3;
+.card-body ul{
+    list-style:none;
+}
+
+.card-body ul li {
+    border-bottom: 1px solid #7e7e7e;
+}
+
+.card-body ul li:last-of-type{
+    border:none;
+}
+
+.fa-large-front {
+    font-size:9rem;
+    line-height:0px;
+    display:block;
+    color: #464646;
+}
+
+.fa-large-front:last-of-type i{
+    font-size:6rem;
+    color: #464646;
+}
+
+.fa-cta-front{
+    font-size:3rem;
+    color: #464646;
 }
 
 /* form styles
@@ -176,13 +243,11 @@ form label {
     width: 100%;
 }
 
-#cust-message.form-control{
-    height:100%;
+#cust-message.form-control {
+    height: 100%;
 }
 
-.form-control.search{
-    
-}
+.form-control.search {}
 
 .form-control:active,
 .form-control:focus,
@@ -197,12 +262,12 @@ form label {
 ------------------ */
 
 footer .row.mt-5 p {
-    text-align:right;
+    text-align: right;
 }
 
-.nav-bottom a{
-    color:white;
-    padding-left:0px;
+.nav-bottom a {
+    color: white;
+    padding-left: 0px;
     pading-right: 15px;
 }
 
@@ -218,32 +283,36 @@ footer .row.mt-5:before {
 /* Product finder page styles 
 ------------------------ */
 
-.q-radius{
+.q-radius {
     border-radius: 2em;
 }
 
-.flex-width > div{
+.flex-width > div {
     flex-basis: 20%;
-    flex-grow:0;
-    text-align:center;
+    flex-grow: 0;
+    text-align: center;
 }
 
-.btn-circle{
-    background-color:#fff;
+.btn-circle {
+    background-color: #fff;
     border-radius: 200px;
-    width:200px;
-    height:200px;
+    width: 200px;
+    height: 200px;
 }
 
 /* About us styles
 -------------------------- */
-.fa-large{
+.fa-large {
     font-size: 48px;
 }
 
 @media (max-width: 576px) {
+
+    .full-width-background.title {
+        padding: 15px 0px;
+    }
     
-    .full-width-background.title{
-    padding:15px 0px;
+    .form-control.search.d-inline-block{
+        width:70%;
     }
 }

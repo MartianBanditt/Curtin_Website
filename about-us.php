@@ -57,7 +57,7 @@
                 <div class="row mt-5">
                     <div class="col-sm-12 col-md-4 p-3 p-md-5 no-gutters bg-third">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-4">
                                 <span class="fa-large"><i class="fas fa-award"></i></span>
                             </div>
                             <div class="col">
@@ -69,7 +69,7 @@
 
                     <div class="col-sm-12 col-md-4 p-3 p-md-5  no-gutters bg-third">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-34">
                                 <span class="fa-large"><i class="fas fa-hands-helping"></i></span>
                             </div>
                             <div class="col">
@@ -81,7 +81,7 @@
 
                     <div class="col-sm-12 col-md-4 p-3 p-md-5  no-gutters bg-third">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-4">
                                 <span class="fa-large"><i class="fas fa-bullhorn"></i></span>
                             </div>
                             <div class="col">
