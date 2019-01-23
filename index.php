@@ -31,7 +31,7 @@
             <div class="container">
                 <section id="cta" class="col-sm-12 col-md-5 offset-md-0 bg-panel-b p-sm-5 p-4">
 
-                    <h2>We are more than just a Bank</h2>
+                    <h2>We are more than a Bank</h2>
                     <p class="my-4">We're insurance, technology, investment and banking.</p>
                     <a href="find-a-service.php" class="btn btn-primary btn-lg">Help us find you the right service</a>
 
@@ -59,20 +59,42 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="mb-sm-5 mb-3 p-sm-5 p-4">
-                            <h3>Technology</h3>
+                    <div class="col mb-sm-0 mb-3">
+                        <div class="card mb-sm-4 mb-3">
+                            <div class="card-header bg-panel-b text-white">
+                                <h3 class="card-title mt-2 ml-3"><span><i class="far fa-credit-card mr-2"></i></span> Our products</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="px-3">
+                                    <li class="py-3"><a href="card-types.php#credit" title="Credit Cards">Credit cards</a></li>
+                                    <li class="py-3"><a href="card-types.php#debit" title="Debit Cards">Debit Cards</a></li>
+                                    <li class="pt-3"><a href="card-types.php#travel-money" title="Travel money Cards">Travel money cards</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="p-sm-5 p-4">
-                            <h3>Security</h3>
+
+                        <div class="col-sm-12 p-3 p-sm-5 no-gutters bg-third mb-sm-0 mb-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <span class="fa-large-front"><i class="fas fa-mobile-alt"></i></span>
+                                    <span class="fa-large-front mt-sm-3"><i class="fab fa-bitcoin"></i></span>
+                                    
+                                </div>
+                                <div class="col">
+                                    <h3>Financial Tech</h3>
+                                    <p>Mobile pay, cryptocurrency, smart-tech, learn more about how we harness fintech to enhance your banking experience</p>
+                                    <a href="services.php" class="btn btn-primary btn-lg">Find out more</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div class="full-width-background my-sm-5 my-3">
+        <div class="full-width-background my-sm-5 mb-3">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-md-8 p-sm-5 p-4 bg-third">
