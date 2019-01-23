@@ -110,7 +110,7 @@ function contact_form(){
     echo <<<CONTACTFORM
     
         <!-- Customer details and payment details form section -->
-        <form class="form" action="scripts/email_form.php" method="post">
+        <form class="form" action="email_form.php" method="post">
             <fieldset class="form-section customer-details">
                 <legend>Your details</legend>
                 
@@ -195,5 +195,16 @@ function booking_form(){
     
 BOOKINGFORM;
     
+}
+
+function thankyou_message($name, $email){
+    echo <<<THANKYOU
+		<div class="full-width-background">
+            <div class="container">
+                <p>Thank You for your time and getting in contact with us
+				   A customer service representative will </p>
+            </div>
+        </div>
+THANKYOU;
 }
 ?>
