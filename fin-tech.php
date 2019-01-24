@@ -8,8 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nationwide - Services</title>
-    <!-- bootstrap styles -->
+    <title>Nationwide - Account Types</title>
     <?php style_sheets(); ?>
     
 </head>
@@ -26,10 +25,10 @@
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
-        <div class="full-width-background title">
+        <div class="full-width-background title mb-5">
             <section id="title" class="container">
 
-                <h1>Services</h1>
+                <h1>Financial Tech</h1>
             </section>
         </div>
 
@@ -37,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Services we offer</h2>
+                        <h2>Financial Tech</h2>
                     </div>
 
                 </div>
@@ -48,7 +47,6 @@
 
     <!-- Footer should be consistent across pages so rendered from php file -->
     <?php footer(); ?>
-
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>

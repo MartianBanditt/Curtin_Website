@@ -54,7 +54,7 @@
                                     <li>Index funds</li>
                                     <li>Credit types</li>
                                 </ul>
-                                <a href="services.php" class="btn btn-primary btn-lg">Find out more</a>
+                                <a href="faq.php" class="btn btn-primary btn-lg">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -66,9 +66,9 @@
                             </div>
                             <div class="card-body">
                                 <ul class="px-3">
-                                    <li class="py-3"><a href="card-types.php#credit" title="Credit Cards">Credit cards</a></li>
-                                    <li class="py-3"><a href="card-types.php#debit" title="Debit Cards">Debit Cards</a></li>
-                                    <li class="pt-3"><a href="card-types.php#travel-money" title="Travel money Cards">Travel money cards</a></li>
+                                    <li class="py-3"><a href="card-types.php#credit-cards" title="Credit Cards">Credit cards</a></li>
+                                    <li class="py-3"><a href="card-types.php#debit-cards" title="Debit Card">Debit Cards</a></li>
+                                    <li class="pt-3"><a href="card-types.php#travel-money-cards" title="Travel money Card">Travel money cards</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                 <div class="col">
                                     <h3>Financial Tech</h3>
                                     <p>Mobile pay, cryptocurrency, smart-tech, learn more about how we harness fintech to enhance your banking experience</p>
-                                    <a href="services.php" class="btn btn-primary btn-lg">Find out more</a>
+                                    <a href="fin-tech.php" class="btn btn-primary btn-lg">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                     <div class="col-md-8 p-sm-5 p-4 bg-third">
                         <h2>We help people every day</h2>
                         <p>Find out how we help them achieve their goals, manage their finances, and make decisions that work for them.</p>
-                        <a href="services.php" class="btn btn-primary btn-lg">Find out more</a>
+                        <a href="about-us.php" class="btn btn-primary btn-lg">Find out more</a>
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <img src="media/handsome-man-coffee-flipped.png" class="img-fluid" alt="...">

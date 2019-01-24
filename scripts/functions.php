@@ -11,8 +11,7 @@ function style_sheets(){
         <link rel="stylesheet" href="css/styles.css">    
         <!-- Webfonts -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans" rel="stylesheet">       
 STYLESHEETS;
 }
 // Header content
@@ -46,13 +45,13 @@ function main_nav(){
                             Products
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="services.php">Our products</a>                         
-                            <a class="dropdown-item" href="account-types.php">Financial tech</a>
+                            <a class="dropdown-item" href="our-products.php">Our products</a>                         
+                            <a class="dropdown-item" href="fin-tech.php">Financial tech</a>
                             <a class="dropdown-item" href="card-types.php">Card Types</a>
                         </div>
                     </li>
                     <li class="nav-item px-sm-3 py-sm-0 py-3">
-                        <a class="nav-link" href="find-a-service.php">Find a product</a>
+                        <a class="nav-link" href="find-a-service.php">Card Selector</a>
                     </li>
                     <li class="nav-item px-sm-3 py-sm-0 py-3">
                         <a class="nav-link" href="faq.php">Faq</a>
@@ -70,14 +69,14 @@ function main_nav(){
             </form>
             </div>
         </nav>
-        </div>
+    </div>
 NAV;
 }
 
 // footer content
 function footer(){
     echo <<<FOOTER
-    <div class="full-width-background bg-fourth">
+    <div class="full-width-background bg-fourth mt-5">
         <div class="container p-5">
         <h2 class="text-center p-3">We're here to help</h2>
             <div class="row justify-content-center">

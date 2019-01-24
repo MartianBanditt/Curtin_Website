@@ -8,7 +8,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nationwide - Account Types</title>
+    <title>Nationwide - Services</title>
+    <!-- bootstrap styles -->
     <?php style_sheets(); ?>
     
 </head>
@@ -25,10 +26,10 @@
 
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
-        <div class="full-width-background title">
+        <div class="full-width-background title mb-5">
             <section id="title" class="container">
 
-                <h1>Account types</h1>
+                <h1>Our products</h1>
             </section>
         </div>
 
@@ -36,7 +37,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Account types</h2>
+                        <h2>Products we offer</h2>
+                        <p>Nationwide has a wide range of products to suit your needs!</p>
                     </div>
 
                 </div>
@@ -47,6 +49,7 @@
 
     <!-- Footer should be consistent across pages so rendered from php file -->
     <?php footer(); ?>
+
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>

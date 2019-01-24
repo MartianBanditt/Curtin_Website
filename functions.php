@@ -45,13 +45,13 @@ function main_nav(){
                             Products
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="services.php">Our products</a>                         
-                            <a class="dropdown-item" href="account-types.php">Financial tech</a>
+                            <a class="dropdown-item" href="our-products.php">Our products</a>                         
+                            <a class="dropdown-item" href="fin-tech.php">Financial tech</a>
                             <a class="dropdown-item" href="card-types.php">Card Types</a>
                         </div>
                     </li>
                     <li class="nav-item px-sm-3 py-sm-0 py-3">
-                        <a class="nav-link" href="find-a-service.php">Find a product</a>
+                        <a class="nav-link" href="card-selector.php">Card Selector</a>
                     </li>
                     <li class="nav-item px-sm-3 py-sm-0 py-3">
                         <a class="nav-link" href="faq.php">Faq</a>
