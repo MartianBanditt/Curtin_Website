@@ -7151,6 +7151,15 @@ footer .row.mt-5:before {
 .fa-large {
   font-size: 48px; }
 
+/* Card types */
+.list-group.row-type {
+  flex-direction: row; }
+
+.list-group-item.active {
+  background-color: #d0e7ff;
+  border: none;
+  color: #464646; }
+
 @media (max-width: 576px) {
   .full-width-background.title {
     padding: 15px 0px; }

@@ -306,6 +306,20 @@ footer .row.mt-5:before {
     font-size: 48px;
 }
 
+
+/* Card types */
+
+.list-group.row-type{
+    flex-direction: row;
+}
+
+.list-group-item.active{
+    background-color: $bg-color-light-blue;
+    border: none;
+    color:#464646;
+}
+
+
 @media (max-width: 576px) {
 
     .full-width-background.title {
