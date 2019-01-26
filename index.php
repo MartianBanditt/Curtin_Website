@@ -28,7 +28,7 @@
     <main>
         <!-- Call to aciton section, funnels through to questionaires -->
         <div class="jumbotron mb-5" id="home-bg-img">
-            <div class="container">
+            <div class="container p-0 p-sm-3">
                 <section id="cta" class="col-sm-12 col-md-5 offset-md-0 bg-panel-b p-sm-5 p-4">
 
                     <h2>We are more than a Bank</h2>
@@ -45,21 +45,7 @@
                 <div class="row" id="front-help">
 
                     <div class="col mb-sm-0 mb-3">
-                        <div class="bg-third p-sm-5 p-4">
-                            <div class="">
-                                <h2>Need help understanding your options?</h2>
-                                <p>We have you covered with a load of information around the basics from</p>
-                                <ul>
-                                    <li>Investing</li>
-                                    <li>Index funds</li>
-                                    <li>Credit types</li>
-                                </ul>
-                                <a href="faq.php" class="btn btn-primary btn-lg">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-sm-0 mb-3">
+                        
                         <div class="card mb-sm-4 mb-3">
                             <div class="card-header bg-panel-b text-white">
                                 <h3 class="card-title mt-2 ml-3"><span><i class="far fa-credit-card mr-2"></i></span> Our products</h3>
@@ -88,6 +74,22 @@
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="col mb-sm-0 mb-3">
+                        
+                        <div class="bg-third p-sm-5 p-4">
+                            <div class="">
+                                <h2>Need help understanding your options?</h2>
+                                <p>We have you covered with a load of information around the basics from</p>
+                                <ul>
+                                    <li>Investing</li>
+                                    <li>Index funds</li>
+                                    <li>Credit types</li>
+                                </ul>
+                                <a href="faq.php" class="btn btn-primary btn-lg">Find out more</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
