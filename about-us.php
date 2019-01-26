@@ -54,10 +54,10 @@
                         <p>When you choose a product/service with Nationwide you also become a member of Nationwide. Because we are owned and run by our members this means you have a say in how we operate and help inform decisions that will impact you.</p>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-sm-12 col-md-4 p-3 p-md-5 no-gutters bg-third">
+                <div class="row mt-5 no-gutter">
+                    <div class="col-sm-12 pt-5 pt-sm-5 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-3">
                                 <span class="fa-large"><i class="fas fa-award"></i></span>
                             </div>
                             <div class="col">
@@ -67,9 +67,9 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4 p-3 p-md-5  no-gutters bg-third">
+                    <div class="col-sm-12 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
-                            <div class="col-34">
+                            <div class="col-3">
                                 <span class="fa-large"><i class="fas fa-hands-helping"></i></span>
                             </div>
                             <div class="col">
@@ -79,9 +79,9 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4 p-3 p-md-5  no-gutters bg-third">
+                    <div class="col-sm-12 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-3">
                                 <span class="fa-large"><i class="fas fa-bullhorn"></i></span>
                             </div>
                             <div class="col">

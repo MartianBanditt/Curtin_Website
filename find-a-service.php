@@ -53,21 +53,21 @@
             <div class="container accordion" id="accordionExample">
                 <!-- Question for user -->
                 <div class="row">
-                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius"><a href="#collapseOne" class="text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hi there! What type of card are you looking for today?</a></h2>
+                    <h2 class="text-center bg-dark text-light p-3 d-inline-block m-auto q-radius"><a href="#collapseOne" class="text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hi there! What type of card are you looking for today?</a></h2>
                 </div>
 
                 <div class="row justify-content-center mt-5 flex-width collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="col m-auto">
-                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Primary</button>
+                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Credit Card</button>
                     </div>
                     <div class="col m-auto">
-                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Primary</button>
+                        <button type="button" class="btn btn-circle" role="button" data-toggle="collapse" data-parent="#accordionExample" href="#collapseTwo" aria-expanded="false">Debit Card</button>
                     </div>
                 </div>
 
                 <!-- Question for user -->
                 <div class="row mt-5">
-                    <h2 class="text-center bg-dark text-light p-5 d-inline-block m-auto q-radius"><a href="#collapseTwo" id="headingTwo" data-toggle="collapse" class="text-white collapsed" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What are you most interested in?</a></h2>
+                    <h2 class="text-center bg-dark text-light p-3 d-inline-block m-auto q-radius"><a href="#collapseTwo" id="headingTwo" data-toggle="collapse" class="text-white collapsed" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What are you most interested in?</a></h2>
                 </div>
 
                 <div class="row justify-content-center mt-5 flex-width collapse" id="collapseTwo" aria-labelledby="headingTwo" aria-expanded="false" data-parent="#accordionExample">
