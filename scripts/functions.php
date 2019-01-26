@@ -72,7 +72,6 @@ function main_nav(){
     </div>
 NAV;
 }
-
 // footer content
 function footer(){
     echo <<<FOOTER
@@ -83,7 +82,7 @@ function footer(){
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center">
                     <div><span class="fa-cta-front"><i class="fas fa-microphone"></i></span></div>
                     <span>Talk to one of our experts</span>
-                    <div>
+                    <div class="mt-4">
                         <a href="contact.php" class="btn btn-primary btn-lg"><span>Contact</span></a>
                     </div>
                 </div>
