@@ -74,6 +74,8 @@ NAV;
 }
 // footer content
 function footer(){
+
+    $date = date("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME']));
     echo <<<FOOTER
     <div class="full-width-background bg-fourth mt-5">
         <div class="container p-5">
@@ -123,6 +125,14 @@ function footer(){
                     </div>
                 </div>
             </footer>
+        </div>
+    </div>
+    <div class="full-width-background bg-darkest-blue p-sm-5 p-3">
+        <div class="container">
+            <div>&copy;<script>document.write(new Date().getFullYear()); </script> Jason Lane, James Eastoe-Collins. Last modified $date</div>
+            <div>Disclaimer: This website is not a real website and is been created as part of an assignment in an approved course of study for CurtinUniversity and contains copyright material not created by the author. All copyright material usedremains copyright of the respective owners and has been used here pursuant to Section 40 of theCopyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced withoutconsent of the original copyright owners. See code comments for references.</div>
+            </div>
+
         </div>
     </div>
 FOOTER;
