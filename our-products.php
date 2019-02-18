@@ -67,8 +67,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row no-gutters d-flex justify-content-center my-5">
-                    <a href="find-a-service.php" class="btn btn-primary btn-lg text-center">Find the right card</a>
+                <div class="my-5 text-center">
+                    <h2>Use our card selector to find the right card for you</h2>
+                    <p><a href="find-a-service.php" class="btn btn-primary btn-lg text-center">Find the right card</a></p>
                 </div>
             </div>
         </div>
@@ -77,8 +78,9 @@
                 <div class="row">
                     <div class="col-md-7 my-sm-3 p-5">
                         <div class="title-border-red">
-                            <h2>Cardless banking</h2>
+                            <h2>Financial technology</h2>
                             <p class="mb-0">Bank on your phone with the Nationwide smarthphone app and leave your card at home. Supported at all Nationwide atms.</p>
+                            <p><a href="fin-tech.php" class="btn btn-primary btn-lg text-center">Find out more</a></p>
                         </div>
                     </div>
 
