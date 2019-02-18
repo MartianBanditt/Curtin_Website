@@ -6935,7 +6935,12 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-h1, h2, h2, h3, h4, h5 {
+h1,
+h2,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Montserrat', sans-serif; }
 
 #title h1 {
@@ -7001,6 +7006,18 @@ p {
   background-color: #c0cedd;
   padding: 25px;
   margin: 0px; }
+
+.text-qoute {
+  z-index: 999;
+  color: #fff;
+  border-right: 4px solid #ee2124;
+  border-bottom: 4px solid #ee2124; }
+
+.big-quote {
+  padding: 100px 0px !important; }
+
+.big-quote span {
+  color: #ee2124; }
 
 /* Section styles
 ----------------------- */
@@ -7193,7 +7210,29 @@ footer .row.mt-5:before {
   .full-width-background.title {
     padding: 15px 0px; }
   .form-control.search.d-inline-block {
-    width: 70%; } }
+    width: 70%; }
+  .image-quote {
+    max-width: 170%; } }
+
+@media (min-width: 992px) {
+  .image-quote {
+    max-width: 170%;
+    position: absolute;
+    z-index: 0;
+    left: -130px;
+    top: -35px;
+    height: 350px;
+    width: 520px; } }
+
+@media (min-width: 1200px) {
+  .image-quote {
+    position: absolute;
+    z-index: 0;
+    left: -130px;
+    top: -35px;
+    max-width: 200%;
+    height: 350px;
+    width: 600px; } }
 
 /* summary of accounts */
 .listofaccounts {

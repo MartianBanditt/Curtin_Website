@@ -22,22 +22,33 @@ $front-bg: url("../media/test.png");
 --------------------- */
 .bg-secondary-blue {
     background-color: $bg-color-blue;
-} // main logo blue
+}
+
+// main logo blue
 
 .bg-third {
     background-color: $bg-third;
-} // grey blue
+}
+
+// grey blue
 
 .bg-fourth {
     background-color: $bg-color-light-blue;
-} //light blue
+}
+
+//light blue
 
 // fonts
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h2, h3, h4, h5 {
+h1,
+h2,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -52,41 +63,42 @@ p {
 
 /* Interactions colors 
     ------------------ */
-.btn-outline-success{
+.btn-outline-success {
     color: $intr-hover;
     border-color: $intr-hover;
 }
 
-.btn-outline-success:hover, 
-.btn-outline-success:not(:disabled):not(.disabled):active, 
-.btn-outline-success:not(:disabled):not(.disabled).active, 
+.btn-outline-success:hover,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
     background-color: $intr-hover;
     border-color: $intr-hover;
 }
 
 .btn-primary {
-  background-color: $intr-blue;
-  border-color: $intr-blue; 
+    background-color: $intr-blue;
+    border-color: $intr-blue;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: $intr-hover;
     border-color: $intr-hover;
 }
 
-.border-bottom-4{
+.border-bottom-4 {
     border-bottom: 4px solid $nwide-red;
     transition: border-bottom .5s;
 }
 
-.border-bottom-4:hover{
+.border-bottom-4:hover {
     border-bottom: 4px solid $bg-color-blue;
     transition: border-bottom .5s;
 }
 
-.title-border-red{
+.title-border-red {
     border-left: 4px solid $nwide-red;
-    padding-left:24px;
+    padding-left: 24px;
 }
 
 /* homepage styles 
@@ -117,6 +129,21 @@ p {
     background-color: #c0cedd;
     padding: 25px;
     margin: 0px;
+}
+
+.text-qoute {
+    z-index: 999;
+    color: #fff;
+    border-right: 4px solid $nwide-red;
+    border-bottom: 4px solid $nwide-red;
+}
+
+.big-quote {
+    padding: 100px 0px !important;
+}
+
+.big-quote span {
+    color: $nwide-red;
 }
 
 /* Section styles
@@ -358,7 +385,50 @@ footer .row.mt-5:before {
     .form-control.search.d-inline-block {
         width: 70%;
     }
+
+    .image-quote {
+        max-width:170%;
+
+    }
 }
+
+
+@media (min-width: 768px) {
+
+    .image-quote {
+
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .image-quote {
+max-width:170%;
+            position: absolute;
+    z-index: 0;
+    left: -130px;
+    top: -35px;
+    height: 350px;
+    width: 520px;
+    }
+
+}
+
+@media(min-width: 1200px){
+    .image-quote {
+    position: absolute;
+    z-index: 0;
+    left: -130px;
+    top: -35px;
+    max-width: 200%;
+    height: 350px;
+    width: 600px;
+
+    }
+}
+
 
 /* summary of accounts */
 
@@ -376,7 +446,7 @@ footer .row.mt-5:before {
 }
 
 .listofaccounts img {
-    float:left;
+    float: left;
 }
 
 .listofaccounts b {
