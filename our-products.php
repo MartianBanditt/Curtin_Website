@@ -11,7 +11,7 @@
     <title>Nationwide - Services</title>
     <!-- bootstrap styles -->
     <?php style_sheets(); ?>
-    
+
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             </section>
         </div>
 
-        <div class="full-width-background">
+        <div class="full-width-background mb-5">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -45,6 +45,48 @@
             </div>
         </div>
 
+
+        <div class="full-width-background bg-third py-5 products-cards">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-6 bg-white p-sm-5 p-4">
+                        <h2>Debit cards</h2>
+                        <p>We offer a range of debit cards to suit your needs:</p>
+                        <ul>
+                            <li>Low account fees</li>
+                            <li>Easy use and access</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 bg-white p-sm-5 p-4">
+                        <h3>Credit cards </h3>
+                        <p>Need a bit more flexibility? Our credit cards have you covered:</p>
+                        <ul>
+                            <li>Low rate</li>
+                            <li>Greate cash back and member rewards</li>
+                            <li>Interest free for 60 days(depending on the card)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters d-flex justify-content-center my-5">
+                    <a href="find-a-service.php" class="btn btn-primary btn-lg text-center">Find the right card</a>
+                </div>
+            </div>
+        </div>
+        <div class="full-width-background mt-sm-5 pt-sm-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 my-sm-3 p-5">
+                        <div class="title-border-red">
+                            <h2>Cardless banking</h2>
+                            <p class="mb-0">Bank on your phone with the Nationwide smarthphone app and leave your card at home. Supported at all Nationwide atms.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <!-- Footer should be consistent across pages so rendered from php file -->
@@ -53,7 +95,7 @@
 
     <!-- Loading scripts last -->
     <?php scripts(); ?>
-    
+
 </body>
 
 </html>
