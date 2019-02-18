@@ -10,6 +10,7 @@ $bg-darkest-blue: #013260;
 $bg-color-light-blue: #d0e7ff;
 $intr-blue: #0685FF;
 $intr-hover: #50A7FC;
+$nwide-red : #ee2124;
 
 $bg-color-white: #fff;
 $white-text: #fff;
@@ -71,6 +72,21 @@ p {
 .btn-primary:hover{
     background-color: $intr-hover;
     border-color: $intr-hover;
+}
+
+.border-bottom-4{
+    border-bottom: 4px solid $nwide-red;
+    transition: border-bottom .5s;
+}
+
+.border-bottom-4:hover{
+    border-bottom: 4px solid $bg-color-blue;
+    transition: border-bottom .5s;
+}
+
+.title-border-red{
+    border-left: 4px solid $nwide-red;
+    padding-left:24px;
 }
 
 /* homepage styles 
@@ -155,7 +171,7 @@ nav a::before {
 
 /* Border styling for the transform */
 nav a::before {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $nwide-red;
     transform-origin: bottom left;
 }
 
@@ -342,4 +358,28 @@ footer .row.mt-5:before {
     .form-control.search.d-inline-block {
         width: 70%;
     }
+}
+
+/* summary of accounts */
+
+.listofaccounts {
+    margin-top: 20px;
+    text-align: center-left;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 0px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 25px;
+    height: 100px;
+}
+
+.listofaccounts img {
+    float:left;
+}
+
+.listofaccounts b {
+    padding-left: 30px;
+    padding-right: 10px;
 }

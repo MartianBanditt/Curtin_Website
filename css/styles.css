@@ -6966,6 +6966,18 @@ p {
   background-color: #50A7FC;
   border-color: #50A7FC; }
 
+.border-bottom-4 {
+  border-bottom: 4px solid #ee2124;
+  transition: border-bottom .5s; }
+
+.border-bottom-4:hover {
+  border-bottom: 4px solid #0052a0;
+  transition: border-bottom .5s; }
+
+.title-border-red {
+  border-left: 4px solid #ee2124;
+  padding-left: 24px; }
+
 /* homepage styles 
 ---------------------*/
 #home-bg-img {
@@ -7033,7 +7045,7 @@ nav a::before {
 
 /* Border styling for the transform */
 nav a::before {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ee2124;
   transform-origin: bottom left; }
 
 /* Applies transform when the anchor link is hovered over */
@@ -7183,35 +7195,22 @@ footer .row.mt-5:before {
   .form-control.search.d-inline-block {
     width: 70%; } }
 
-/* summary of accounts 
---------------------------- */
-
+/* summary of accounts */
 .listofaccounts {
-	
-	margin-top: 20px;
-	text-align: center-left;
-	padding-left: 30px;
-	padding-right: 50px;
-	padding-top: 0px;
-	border-style: solid;
-	border-color: gray;
-	border-width: 1px;
-	border-radius: 25px;
-	height: 100px;
-
-}
+  margin-top: 20px;
+  text-align: center-left;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 0px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  border-radius: 25px;
+  height: 100px; }
 
 .listofaccounts img {
-	
-	float:left;
-}
-
+  float: left; }
 
 .listofaccounts b {
-	
-	padding-left: 30px;
-	padding-right: 10px;
-	
-	
-}
-
+  padding-left: 30px;
+  padding-right: 10px; }
