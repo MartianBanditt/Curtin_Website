@@ -59,7 +59,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 p-3 p-sm-5 no-gutters bg-third mb-sm-0 mb-0">
+                        <div class="col-sm-12 p-3 p-sm-5 no-gutters bg-third mb-sm-0 mb-0 border-bottom-4">
                             <div class="row">
                                 <div class="col-4">
                                     <span class="fa-large-front"><i class="fas fa-mobile-alt"></i></span>
@@ -78,7 +78,7 @@
 
                     <div class="col mb-sm-0 mb-3">
 
-                        <div class="bg-third p-sm-5 p-4">
+                        <div class="bg-third p-sm-5 p-4 border-bottom-4">
                             <div class="">
                                 <h2>Need help understanding your options?</h2>
                                 <p>We have you covered with a load of information around the basics from</p>
@@ -96,10 +96,10 @@
             </div>
         </div>
 
-        <div class="full-width-background my-sm-5 mb-3">
+        <div class="full-width-background bg-third mt-sm-5 mb-3 py-sm-5">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-md-8 p-sm-5 p-4 bg-third">
+                    <div class="col-md-8 p-sm-5 p-4 bg-white border-bottom-4">
                         <h2>We help people every day</h2>
                         <p>Find out how we help them achieve their goals, manage their finances, and make decisions that work for them.</p>
                         <a href="about-us.php" class="btn btn-primary btn-lg">Find out more</a>
@@ -108,7 +108,20 @@
                         <img src="media/handsome-man-coffee-flipped.png" class="img-fluid" alt="...">
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="full-width-background bg-white mt-sm-5 mb-3 py-sm-5 big-quote">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-7 p-sm-5 p-4 bg-secondary-blue text-qoute">
+                        <h2><span>"</span>As a Nationwide member I know that I'm working with people that have my best interest at heart.<span>"</span></h2>
+                        <footer class="blockquote-footer">Web developer <cite title="Source Title">James Collins</cite></footer>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <img src="media/handsome-man-coffee-flipped.png" class="img-fluid image-quote" alt="...">
+                    </div>
+                </div>
             </div>
         </div>
 
