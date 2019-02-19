@@ -6935,6 +6935,9 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-red {
   background-color: #ee2124; }
 
+.text-red {
+  color: #ee2124; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
