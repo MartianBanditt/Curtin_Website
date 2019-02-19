@@ -1,6 +1,14 @@
-<!-- Move this to a function file -->
 <?php
+	
+	// Change to the https secure site
+	if($_SERVER["HTTPS"] != "on"){
+		
+		header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+		exit();
+	}
+
    require_once 'scripts/functions.php';
+      
 ?>
 
 <!DOCTYPE html>
