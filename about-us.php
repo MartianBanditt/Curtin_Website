@@ -58,7 +58,7 @@
                     <div class="col-sm-12 pt-5 pt-sm-5 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
                             <div class="col-3">
-                                <span class="fa-large"><i class="fas fa-award"></i></span>
+                                <span class="fa-large text-red"><i class="fas fa-award"></i></span>
                             </div>
                             <div class="col">
                                 <h5>We're Number one for customer satisfaction</h5>
@@ -70,7 +70,7 @@
                     <div class="col-sm-12 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
                             <div class="col-3">
-                                <span class="fa-large"><i class="fas fa-hands-helping"></i></span>
+                                <span class="fa-large text-red"><i class="fas fa-hands-helping"></i></span>
                             </div>
                             <div class="col">
                                 <h5>Run for the benifit of our members</h5>
@@ -82,7 +82,7 @@
                     <div class="col-sm-12 col-md-4 p-3 p-md-5 bg-fourth">
                         <div class="row">
                             <div class="col-3">
-                                <span class="fa-large"><i class="fas fa-bullhorn"></i></span>
+                                <span class="fa-large text-red"><i class="fas fa-bullhorn"></i></span>
                             </div>
                             <div class="col">
                                 <h5>You get a say</h5>
@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-8">
                         <h2>What we do</h2>
-                        <p>We're banking, investment, financial services and advice, contacts, credit cards and so much mroe.</p>
+                        <p>We're banking, investment, financial services and advice, contacts, credit cards and so much more.</p>
                     </div>
                 </div>
             </div>
