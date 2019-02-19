@@ -36,6 +36,10 @@ $front-bg: url("../media/test.png");
     background-color: $bg-color-light-blue;
 }
 
+.bg-red{
+    background-color: $nwide-red;
+}
+
 //light blue
 
 // fonts
@@ -358,6 +362,14 @@ footer .row.mt-5:before {
     height: 200px;
 }
 
+.accordian-title{
+    margin:0px;
+}
+.question-box{
+    position:relative;
+    cursor: pointer;
+}
+
 /* About us styles
 -------------------------- */
 .fa-large {
@@ -377,7 +389,7 @@ footer .row.mt-5:before {
     color: #464646;
 }
 
-.products-cards div div:first-of-type {
+.box-shadow-box {
     box-shadow: 0px 4px 8px 2px #9e9e9e;
 }
 
@@ -395,28 +407,46 @@ footer .row.mt-5:before {
         max-width: 170%;
     }
 
-    .products-cards div div > div:first-of-type {
+    .products-cards > div:first-of-type {
         border-bottom: 4px solid $nwide-red;
     }
 }
 
 @media (min-width: 576px) {
-    .products-cards div div > div:first-of-type {
+    .products-cards > div:first-of-type {
         border-bottom: 4px solid $nwide-red;
     }
 }
 
 @media (min-width: 768px) {
-    .products-cards div div > div:first-of-type {
+    .products-cards > div:first-of-type {
         border-right: 2px solid $nwide-red;
         border-bottom: none;
 
     }
 
-    .products-cards div div > div:last-of-type {
+    .products-cards  > div:last-of-type {
         border-left: 2px solid $nwide-red;
 
     }
+    .question-box:after{
+    content: "\f106";
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: all .5s;
+    position:absolute;
+    right:15px;
+    top:-10px;
+    font-size:3em;
+}
+
+.question-box.collapsed:after{
+  transform: rotate(180deg);
+    transition: all .5s;
+    //content: "\f107";
+
+}
 }
 
 @media (min-width: 992px) {
@@ -430,6 +460,8 @@ footer .row.mt-5:before {
         height: 350px;
         width: 520px;
     }
+
+
 
 }
 
@@ -447,6 +479,24 @@ footer .row.mt-5:before {
 
 }
 
+.answer-box{
+    margin:0px;
+    background-color:#fff;
+    border:1px solid;
+
+}
+
+.accordion > div:nth-child(even){
+    border-bottom:1px solid #fff;
+}
+
+.accordion h2{
+    margin-bottom:0px;
+}
+
+label{
+    display:block;
+}
 
 /* summary of accounts */
 
