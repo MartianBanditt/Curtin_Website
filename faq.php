@@ -58,7 +58,7 @@
             <div class="container accordion" id="accordionExample">
                 <h2 class="mb-4">General questions about banking</h2>
                 <!-- faq questions and answers -->
-                <div class="row text-center bg-dark text-light p-2 m-auto question-box collapsed" class="text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <div class="row bg-dark text-light p-2 m-auto question-box collapsed" class="text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                     <h3 class="accordian-title">What is the different between a credit and debit card?</h3>
                 </div>
 
@@ -90,7 +90,7 @@
 
 
                 <!-- faq questions and answers -->
-                <div class="row text-center bg-dark text-light p-2 m-auto question-box collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <div class="row bg-dark text-light p-2 m-auto question-box collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                     <h3 class="accordian-title">How does investing work?</h3>
                 </div>
                 <div class="row justify-content-center p-3 collapse answer-box" id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample">
@@ -111,7 +111,7 @@
             <div class="container accordion" id="accordionExample">
                 <h2 class="mb-4 text-white">Learn more about Nationwide</h2>
                 <!-- Question for user -->
-                <div class="row text-center bg-red text-light p-2 m-auto question-box collapsed"id="headingOne" data-toggle="collapse" class="text-white collapsed" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed"id="headingOne" data-toggle="collapse" class="text-white collapsed" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <h3 class="accordian-title">Can anyone be a member of Nationwide?</h3>
                 </div>
 
@@ -124,7 +124,7 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row text-center bg-red text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <h3 class="accordian-title">What benifits do members enjoy?</h3>
                 </div>
 
@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row text-center bg-red text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" class="text-white collapsed" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" class="text-white collapsed" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <h3 class="accordian-title">Does Nationwide use my money ethically</h3>
                 </div>
 
