@@ -46,9 +46,9 @@
         </div>
 
 
-        <div class="full-width-background bg-third py-5 products-cards">
+        <div class="full-width-background bg-third py-5">
             <div class="container">
-                <div class="row no-gutters">
+                <div class="row no-gutters products-cards box-shadow-box">
                     <div class="col-sm-12 col-md-6 bg-white p-sm-5 p-4">
                         <h2>Debit cards</h2>
                         <p>We offer a range of debit cards to suit your needs:</p>
