@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        <div class="full-width-background bg-third mt-sm-5 mb-3 py-sm-5">
+        <div class="full-width-background bg-third mt-sm-5 mb-3 py-3 py-sm-5">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-md-8 p-sm-5 p-4 bg-white border-bottom-4">
@@ -119,7 +119,7 @@
             </div>
         </div>
 
-        <div class="full-width-background bg-white mt-sm-5 mb-3 py-sm-5 big-quote">
+        <div class="full-width-background bg-white mt-l-5 mb-3 py-sm-5 big-quote">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-md-12 col-lg-7 p-sm-5 p-4 bg-secondary-blue text-qoute">
@@ -127,7 +127,7 @@
                         <footer class="blockquote-footer">Web developer <cite title="Source Title">James Collins</cite></footer>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-5">
-                        <img src="media/handsome-man-coffee-flipped.png" class="img-fluid image-quote" alt="...">
+                        <img src="media/bottom.png" class="img-fluid image-quote" alt="...">
                     </div>
                 </div>
             </div>
