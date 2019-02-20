@@ -7019,9 +7019,6 @@ p {
   border-right: 4px solid #ee2124;
   border-bottom: 4px solid #ee2124; }
 
-.big-quote {
-  padding: 100px 0px !important; }
-
 .big-quote span {
   color: #ee2124; }
 
@@ -7228,7 +7225,7 @@ footer .row.mt-5:before {
   .form-control.search.d-inline-block {
     width: 70%; }
   .image-quote {
-    max-width: 170%; }
+    max-width: 100%; }
   .products-cards > div:first-of-type {
     border-bottom: 4px solid #ee2124; } }
 
@@ -7240,6 +7237,10 @@ footer .row.mt-5:before {
   .products-cards > div:first-of-type {
     border-right: 2px solid #ee2124;
     border-bottom: none; }
+  .big-quote {
+    padding: 100px 0px !important; }
+  .image-quote {
+    width: 690px; }
   .products-cards > div:last-of-type {
     border-left: 2px solid #ee2124; }
   .question-box:after {

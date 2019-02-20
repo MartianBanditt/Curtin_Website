@@ -36,10 +36,11 @@ $front-bg: url("../media/test.png");
     background-color: $bg-color-light-blue;
 }
 
-.bg-red{
+.bg-red {
     background-color: $nwide-red;
 }
-.text-red{
+
+.text-red {
     color: $nwide-red;
 }
 
@@ -143,10 +144,6 @@ p {
     color: #fff;
     border-right: 4px solid $nwide-red;
     border-bottom: 4px solid $nwide-red;
-}
-
-.big-quote {
-    padding: 100px 0px !important;
 }
 
 .big-quote span {
@@ -365,11 +362,12 @@ footer .row.mt-5:before {
     height: 200px;
 }
 
-.accordian-title{
-    margin:0px;
+.accordian-title {
+    margin: 0px;
 }
-.question-box{
-    position:relative;
+
+.question-box {
+    position: relative;
     cursor: pointer;
 }
 
@@ -407,7 +405,7 @@ footer .row.mt-5:before {
     }
 
     .image-quote {
-        max-width: 170%;
+        max-width: 100%;
     }
 
     .products-cards > div:first-of-type {
@@ -428,28 +426,37 @@ footer .row.mt-5:before {
 
     }
 
-    .products-cards  > div:last-of-type {
+    .big-quote {
+        padding: 100px 0px !important;
+    }
+
+    .image-quote {
+        width: 690px;
+    }
+
+    .products-cards > div:last-of-type {
         border-left: 2px solid $nwide-red;
 
     }
-    .question-box:after{
-    content: "\f106";
 
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    transition: all .5s;
-    position:absolute;
-    right:15px;
-    top:-10px;
-    font-size:3em;
-}
+    .question-box:after {
+        content: "\f106";
 
-.question-box.collapsed:after{
-  transform: rotate(180deg);
-    transition: all .5s;
-    //content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        transition: all .5s;
+        position: absolute;
+        right: 15px;
+        top: -10px;
+        font-size: 3em;
+    }
 
-}
+    .question-box.collapsed:after {
+        transform: rotate(180deg);
+        transition: all .5s;
+        //content: "\f107";
+
+    }
 }
 
 @media (min-width: 992px) {
@@ -482,23 +489,23 @@ footer .row.mt-5:before {
 
 }
 
-.answer-box{
-    margin:0px;
-    background-color:#fff;
-    border:1px solid;
+.answer-box {
+    margin: 0px;
+    background-color: #fff;
+    border: 1px solid;
 
 }
 
-.accordion > div:nth-child(even){
-    border-bottom:1px solid #fff;
+.accordion > div:nth-child(even) {
+    border-bottom: 1px solid #fff;
 }
 
-.accordion h2{
-    margin-bottom:0px;
+.accordion h2 {
+    margin-bottom: 0px;
 }
 
-label{
-    display:block;
+label {
+    display: block;
 }
 
 /* summary of accounts */
