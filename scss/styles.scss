@@ -293,6 +293,7 @@ nav ul > li:hover > a::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom:0px;
 }
 
 
@@ -501,9 +502,12 @@ footer .row.mt-5:before {
         width: 520px;
     }
 
-    #home-bg-img{
+    #home-bg-img,
+    #card-hero{
         padding:150px;
     }
+
+
 
 }
 

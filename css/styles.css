@@ -7138,7 +7138,8 @@ nav ul > li:hover > a::before {
   background-image: url("../media/card6.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 0px; }
 
 /* form styles
 ----------------------- */
@@ -7285,7 +7286,8 @@ footer .row.mt-5:before {
     top: -35px;
     height: 350px;
     width: 520px; }
-  #home-bg-img {
+  #home-bg-img,
+  #card-hero {
     padding: 150px; } }
 
 @media (min-width: 1200px) {
