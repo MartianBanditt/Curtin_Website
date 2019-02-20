@@ -6993,7 +6993,7 @@ p {
 ---------------------*/
 #home-bg-img {
   color: #fff;
-  background-image: url("../media/test.png");
+  background-image: url("../media/card5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -7132,6 +7132,14 @@ nav ul > li:hover > a::before {
   font-size: 3rem;
   color: #464646; }
 
+/* Card selector styles
+------------------------- */
+#card-hero {
+  background-image: url("../media/card6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* form styles
 ----------------------- */
 form label {
@@ -7227,11 +7235,19 @@ footer .row.mt-5:before {
   .image-quote {
     max-width: 100%; }
   .products-cards > div:first-of-type {
-    border-bottom: 4px solid #ee2124; } }
+    border-bottom: 4px solid #ee2124; }
+  #cta {
+    background: linear-gradient(45deg, rgba(0, 82, 160, 0.7) 30%, #50a7fc 110%); }
+  #card-hero > div > div > div {
+    background-color: rgba(255, 255, 255, 0.6); } }
 
 @media (min-width: 576px) {
   .products-cards > div:first-of-type {
-    border-bottom: 4px solid #ee2124; } }
+    border-bottom: 4px solid #ee2124; }
+  #cta {
+    background: linear-gradient(45deg, rgba(0, 82, 160, 0.7) 30%, #50a7fc 110%); }
+  #card-hero > div > div > div {
+    background-color: rgba(255, 255, 255, 0.6); } }
 
 @media (min-width: 768px) {
   .products-cards > div:first-of-type {
@@ -7254,7 +7270,11 @@ footer .row.mt-5:before {
     font-size: 3em; }
   .question-box.collapsed:after {
     transform: rotate(180deg);
-    transition: all .5s; } }
+    transition: all .5s; }
+  #card-hero > div > div > div {
+    background-color: rgba(255, 255, 255, 0.7); }
+  #cta {
+    background: linear-gradient(45deg, #0052a0 30%, #50a7fc 110%); } }
 
 @media (min-width: 992px) {
   .image-quote {
@@ -7264,7 +7284,9 @@ footer .row.mt-5:before {
     left: -130px;
     top: -35px;
     height: 350px;
-    width: 520px; } }
+    width: 520px; }
+  #home-bg-img {
+    padding: 150px; } }
 
 @media (min-width: 1200px) {
   .image-quote {

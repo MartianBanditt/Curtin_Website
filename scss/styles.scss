@@ -16,7 +16,8 @@ $bg-color-white: #fff;
 $white-text: #fff;
 
 //background images
-$front-bg: url("../media/test.png");
+$front-bg: url("../media/card5.jpg");
+$card-bg: url("../media/card6.jpg");
 
 /* background colors
 --------------------- */
@@ -152,7 +153,9 @@ p {
 
 /* Section styles
 ----------------------- */
-.full-width-background {}
+.full-width-background {
+
+}
 
 /* Navbar styles
 ----------------------- */
@@ -283,6 +286,14 @@ nav ul > li:hover > a::before {
     color: #464646;
 }
 
+/* Card selector styles
+------------------------- */
+#card-hero{
+    background-image: $card-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /* form styles
@@ -411,11 +422,23 @@ footer .row.mt-5:before {
     .products-cards > div:first-of-type {
         border-bottom: 4px solid $nwide-red;
     }
+        #cta{
+        background: linear-gradient(45deg, rgba(0, 82, 160, .7) 30%, rgba(80, 167, 252, 7) 110%);
+    }
+        #card-hero > div > div > div{
+        background-color: rgba(255, 255, 255, .6);
+    }
 }
 
 @media (min-width: 576px) {
     .products-cards > div:first-of-type {
         border-bottom: 4px solid $nwide-red;
+    }
+    #cta{
+        background: linear-gradient(45deg, rgba(0, 82, 160, .7) 30%, rgba(80, 167, 252, 7) 110%);
+    }
+        #card-hero > div > div > div{
+        background-color: rgba(255, 255, 255, .6);
     }
 }
 
@@ -455,7 +478,14 @@ footer .row.mt-5:before {
         transform: rotate(180deg);
         transition: all .5s;
         //content: "\f107";
+    }
 
+    #card-hero > div > div > div{
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    #cta{
+        background: linear-gradient(45deg, #0052a0 30%, #50a7fc 110%);
     }
 }
 
@@ -471,7 +501,9 @@ footer .row.mt-5:before {
         width: 520px;
     }
 
-
+    #home-bg-img{
+        padding:150px;
+    }
 
 }
 
