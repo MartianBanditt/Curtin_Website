@@ -9,6 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nationwide - Faq</title>
     <?php style_sheets(); ?>
 
 </head>
@@ -55,14 +56,14 @@
         </div>
 
         <div class="full-width-background my-5 py-5 bg-third" id="general">
-            <div class="container accordion" id="accordionExample">
+            <div class="container accordion" id="accordionExample1">
                 <h2 class="mb-4">General questions about banking</h2>
                 <!-- faq questions and answers -->
-                <div class="row bg-dark text-light p-2 m-auto question-box collapsed" class="text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <div class="row bg-dark text-light p-2 m-auto question-box collapsed text-white" id="headingFour" data-toggle="collapse" data-target="#collapseFour" role="button" aria-expanded="true" aria-controls="collapseFour">
                     <h3 class="accordian-title">What is the different between a credit and debit card?</h3>
                 </div>
 
-                <div class="row justify-content-center p-3 products-cards collapse answer-box" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="row justify-content-center p-3 products-cards collapse answer-box" id="collapseFour" aria-labelledby="headingFour" data-parent="#general">
 
                     <div class="col-sm-12 col-md-6 bg-white p-sm-5 p-4">
                         <h2>Debit cards</h2>
@@ -90,10 +91,10 @@
 
 
                 <!-- faq questions and answers -->
-                <div class="row bg-dark text-light p-2 m-auto question-box collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <div class="row bg-dark text-light p-2 m-auto question-box collapsed" id="headingFive" data-toggle="collapse" data-target="#collapsefive" role="button" aria-expanded="true" aria-controls="collapsefive">
                     <h3 class="accordian-title">How does investing work?</h3>
                 </div>
-                <div class="row justify-content-center p-3 collapse answer-box" id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="row justify-content-center p-3 collapse answer-box" id="collapsefive" aria-labelledby="headingFive" data-parent="#general">
 
                     <div class="col-sm-12 col-md-12 bg-white p-sm-5 p-4">
 
@@ -108,14 +109,14 @@
         </div>
 
         <div class="full-width-background my-5 py-5 bg-secondary-blue" id="about-us">
-            <div class="container accordion" id="accordionExample">
+            <div class="container accordion" id="accordionExample2">
                 <h2 class="mb-4 text-white">Learn more about Nationwide</h2>
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed"id="headingOne" data-toggle="collapse" class="text-white collapsed" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                     <h3 class="accordian-title">Can anyone be a member of Nationwide?</h3>
                 </div>
 
-                <div class="row justify-content-center p-3 collapse answer-box" id="collapseOne" aria-labelledby="headingOne" aria-expanded="false" data-parent="#accordionExample">
+                <div class="row justify-content-center p-3 collapse answer-box" id="collapseOne" aria-labelledby="headingOne" data-parent="#about-us">
                     <div class="col-sm-12 col-md-12 bg-white p-sm-5 p-4">
                         <h3>Anyone can be a member of Nationwide</h3>
                         <p>You're a member if you have a current account, mortage, or have invested through us in one of our many investment packages.</p>
@@ -124,11 +125,11 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
                     <h3 class="accordian-title">What benifits do members enjoy?</h3>
                 </div>
 
-                <div class="row justify-content-center p-3 collapse answer-box" id="collapseTwo" aria-labelledby="headingTwo" aria-expanded="false" data-parent="#accordionExample">
+                <div class="row justify-content-center p-3 collapse answer-box" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#about-us">
                     <div class="col-sm-12 col-md-12 bg-white p-sm-5 p-4">
                         <h3>As a member of you gain the following benifits</h3>
                         <ul>
@@ -141,11 +142,11 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" class="text-white collapsed" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
                     <h3 class="accordian-title">Does Nationwide use my money ethically</h3>
                 </div>
 
-                <div class="row justify-content-center p-3 collapse answer-box" id="collapseThree" aria-labelledby="headingThree" aria-expanded="false" data-parent="#accordionExample">
+                <div class="row justify-content-center p-3 collapse answer-box" id="collapseThree" aria-labelledby="headingThree" data-parent="#about-us">
                     <div class="col-sm-12 col-md-12 bg-white p-sm-5 p-4">
                         <h3>We've listened to our members and made sure Nationwide is an ethical company</h3>
                         <p>We have:</p>

@@ -6,7 +6,6 @@
 		header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
 		exit();
 	}
-
    require_once 'scripts/functions.php';
       
 ?>

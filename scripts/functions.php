@@ -11,7 +11,7 @@ function style_sheets(){
         <link rel="stylesheet" href="css/styles.css">    
         <!-- Webfonts -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans" rel="stylesheet">       
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:600%7COpen+Sans" rel="stylesheet">
 STYLESHEETS;
 }
 // Header content
@@ -131,10 +131,10 @@ function footer(){
         <div class="container">
             <div>&copy;<script>document.write(new Date().getFullYear()); </script> Jason Lane, James Eastoe-Collins. Last modified $date</div>
             <div>Disclaimer: This website is not a real website and is been created as part of an assignment in an approved course of study for CurtinUniversity and contains copyright material not created by the author. All copyright material usedremains copyright of the respective owners and has been used here pursuant to Section 40 of theCopyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced withoutconsent of the original copyright owners. See code comments for references.</div>
-            </div>
+         </div>
 
-        </div>
-    </div>
+     </div>
+
 FOOTER;
 }
 // javascript files for footer navigation
@@ -165,7 +165,7 @@ function contact_form(){
                     <input name="cust-email" class="form-control" type="email" id="cust-email" placeholder="Email we can contact you on." required />
                 </div>
                 <div class="mobile form-group">
-                    <label for="cust[mobile]">Mobile</label>
+                    <label for="cust-mobile">Mobile</label>
                     <input name="cust-mobile" class="form-control" type="tel" id="cust-mobile" placeholder="" />
                 </div>
                 <div class="select-box form-group">
@@ -179,7 +179,7 @@ function contact_form(){
                 </div>
                 <div class="text-area form-group">
                     <label for="cust-message">Message</label>
-                    <textarea class="form-control" id="cust-message" name="cust-message" rows="5" cols="60" class="form-textarea"></textarea>
+                    <textarea class="form-control form-textarea" id="cust-message" name="cust-message" rows="5" cols="60"></textarea>
                 </div>
             </fieldset>
             <div class="submit">
@@ -211,7 +211,7 @@ function booking_form(){
                 </div>
                 <div class="select-box form-group">
                     <label for="date">Date</label>
-                    <input name="date" class="form-control booking-date" type="date" id="date"  max="" required />
+                    <input name="date" class="form-control booking-date" type="date" id="date"  required />
                 </div>
                 
                 
@@ -230,6 +230,7 @@ function booking_form(){
                         <option value="17">5:00pm</option>
                     </select>
                 </div>
+            </fieldset>
             <div class="submit">
                 <input class="btn btn-primary btn-lg" type="submit" name="order" value="Order">
             </div>
