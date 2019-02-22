@@ -1,5 +1,9 @@
 <?php
-   require_once 'scripts/functions.php';
+
+    require 'scripts/conn.php';
+
+    require_once 'scripts/functions.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -50,115 +54,38 @@
                         <p>We have a range of credit cards to suit your needs. Browse them below or visit or Card wizard to find the one right for you.</p>
                     </div>
 
+
+                    <?php
+                    $cardName = 'Credit Card';
+                        card_types($cardName);
+                    ?>
+
+
+                    <div id="debit-card" class="my-5">
+                        <div>
+                            <h2>Debit Card</h2>
+                            <p>For when you need an easy way to pay without the hassle of worrying about credit. Browse them below or visit or Card wizard to find the one right for you.</p>
+                        </div>
+                    </div>
+
                     <!-- List group -->
-                    <div class="list-group row-type mb-0" role="tablist">
-                        <a class="list-group-item list-group-item-action cards active" data-toggle="list" href="#card-1" role="tab">Card Name</a>
-                        <a class="list-group-item list-group-item-action cards" data-toggle="list" href="#card-2" role="tab">Card Name 2</a>
-                        <a class="list-group-item list-group-item-action cards" data-toggle="list" href="#card-3" role="tab">Card Name 3</a>
-                        <a class="list-group-item list-group-item-action cards" data-toggle="list" href="#card-4" role="tab">Card Name 4</a>
+                    <?php
+			         $cardName = 'Debit';
+			         card_types($cardName);
+		              ?>
+
+                    <div id="travel-money-card" class="my-5">
+                        <div>
+                            <h2>Travel money Card</h2>
+                            <p>Planning a trip overseas? Our travel money cards take the hassle out of travelling! Browse them below or visit or Card wizard to find the one right for you.</p>
+                        </div>
                     </div>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane p-sm-5 p-3 bg-fourth active" id="card-1" role="tabpanel">
-                            <h3>$card_name</h3>
-                            <div class="row my-4">
-                                <div class="col">
-                                    <h4>At a glance:</h4>
-                                    <p>$at_a_glance</p>
-                                </div>
-                                <div class="col">
-                                    <h5>New member offer:</h5>
-                                    <p>$new_member_offer</p>
-                                </div>
-                                <div class="col">
-                                    <h5>Features:</h5>
-                                    <p>$features</p>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>Annual fee: $annual-fee</h5>
-                                <p>$0</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane p-sm-5 p-3 bg-fourth" id="card-2" role="tabpanel">
-                            <h3>$card_name</h3>
-                            <div class="row my-4">
-                                <div class="col">
-                                    <h4>At a glance:</h4>
-                                    <p>$at_a_glance</p>
-                                </div>
-                                <div class="col">
-                                    <h5>New member offer:</h5>
-                                    <p>$new_member_offer</p>
-                                </div>
-                                <div class="col">
-                                    <h5>Features:</h5>
-                                    <p>$features</p>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>Annual fee: $annual-fee</h5>
-                                <p>$0</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane p-sm-5 p-3 bg-fourth" id="card-3" role="tabpanel">
-                            <h3>$card_name</h3>
-                            <div class="row my-4">
-                                <div class="col">
-                                    <h4>At a glance:</h4>
-                                    <p>$at_a_glance</p>
-                                </div>
-                                <div class="col">
-                                    <h5>New member offer:</h5>
-                                    <p>$new_member_offer</p>
-                                </div>
-                                <div class="col">
-                                    <h5>Features:</h5>
-                                    <p>$features</p>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>Annual fee: $annual-fee</h5>
-                                <p>$0</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane p-sm-5 p-3 bg-fourth" id="card-4" role="tabpanel">
-                            <h3>$card_name</h3>
-                            <div class="row my-4">
-                                <div class="col">
-                                    <h4>At a glance:</h4>
-                                    <p>$at_a_glance</p>
-                                </div>
-                                <div class="col">
-                                    <h5>New member offer:</h5>
-                                    <p>$new_member_offer</p>
-                                </div>
-                                <div class="col">
-                                    <h5>Features:</h5>
-                                    <p>$features</p>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>Annual fee: $annual-fee</h5>
-                                <p>$0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="debit-card" class="my-5">
-                    <div>
-                        <h2>Debit Card</h2>
-                        <p>For when you need an easy way to pay without the hassle of worrying about credit. Browse them below or visit or Card wizard to find the one right for you.</p>
-                    </div>
-                </div>
-
-                <div id="travel-money-card" class="my-5">
-                    <div>
-                        <h2>Travel money Card</h2>
-                        <p>Planning a trip overseas? Our travel money cards take the hassle out of travelling! Browse them below or visit or Card wizard to find the one right for you.</p>
-                    </div>
+                    <!-- List group -->
+                    <?php
+			         $cardName = 'Travel Money Card';
+			         card_types($cardName);
+		             ?>
                 </div>
             </div>
         </div>
