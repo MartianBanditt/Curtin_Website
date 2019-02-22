@@ -240,17 +240,26 @@ BOOKINGFORM;
     
 }
 
-function card_types($cardName){
+function card_types($cardName,$aquery){
 
-    $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$cardName'";
+    $cardType;
+
+    if ($aquery == null){
+        $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$cardName'";
+    }else{
+        $cardType = $aquery;
+    }
 
     global $conn;
 
     $cards = mysqli_query($conn, $cardType);
+
+    if(!empty($_POST) && mysqli_num_rows($cards) == 0){
+        echo '<h2 class="warning">Sorry we couldnt find any cards<h2>';
+    }
     // Loops through the cards and outputs Card names as headers
     // href needs to match to a tab-pane
     // The first should have a class of active but I can always do that with a bit of css or jquery later
-
     echo "<div class='list-group row-type mb-0' role='tablist'>";
 
         $id = 'card';
@@ -298,4 +307,61 @@ function card_types($cardName){
         }
     echo '</div>';
 }
+
+function card_selector($card){
+
+
+
+    if (!empty($_POST["card-type-dc"])){
+        $card_type1 = $_POST["card-type-dc"];
+    }
+    $i_value = "";
+    $reward_type = "";
+    $type_of_perks = "";
+
+    if(!empty($_POST)){
+
+
+    if($_POST["card-type-interest"] == "rewards-types" and !empty($_POST["card-type-interest"])){
+        $i_value = "Rewards and Perks";
+    } elseif($_POST["card-type-interest"] == "saving" and !empty($_POST["card-type-interest"])){
+        $i_value = "Saving Money";
+    }elseif($_POST["card-type-interest"] == "ease" and !empty($_POST["card-type-interest"])){
+        $i_value = "ease";
+    }
+
+    if($_POST["card-type-reward-types"] == "reward-cash-back" and !empty($_POST["card-type-reward-types"])){
+        $reward_type = "Cash Back";
+    } elseif($_POST["card-type-reward-types"] == "reward-travel" and !empty($_POST["card-type-reward-types"])){
+        $reward_type = "Travel";
+    }elseif($_POST["card-type-reward-types"] == "reward-flexible" and !empty($_POST["card-type-reward-types"])){
+        $reward_type = "Flexible";
+    }elseif($_POST["card-type-saving"] == "high-interest" and !empty($_POST["card-type-saving"])){
+        $reward_type = "High Interest";
+    }elseif($_POST["card-type-saving"] == "low-fees" and !empty($_POST["card-type-saving"])){
+        $reward_type = "Low Account Fees";
+    }elseif($_POST["card-type-ease"] == "low-fees" and !empty($_POST["card-type-ease"])){
+        $reward_type = "Shopping Online";
+    }elseif($_POST["card-type-ease"] == "low-fees" and !empty($_POST["card-type-ease"])){
+        $reward_type = "Shopping In-Store";
+    }
+
+    if($_POST["travel"] == "flights" and !empty($_POST["travel"])){
+        $type_of_perks = "Flights";
+    }elseif($_POST["travel"] == "hotels" and !empty($_POST["travel"])){
+        $reward_type = "Hotels";
+    }
+
+    if (!empty($type_of_perks)){
+        return $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$card_type1' AND i_value = '$i_value' AND reward_type = '$reward_type' AND type_of_perks = '$type_of_perks'";
+    }elseif(!empty($reward_type)){
+        return $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$card_type1' AND i_value = '$i_value' AND reward_type = '$reward_type'";
+    }else{
+        return $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$card_type1' AND i_value = '$i_value'";
+    }
+
+    }
+}
+
+
 ?>
