@@ -66,7 +66,7 @@
                 <div class="row justify-content-center p-3 products-cards collapse answer-box" id="collapseFour" aria-labelledby="headingFour" data-parent="#general">
 
                     <div class="col-sm-12 col-md-6 bg-white p-sm-5 p-4">
-                        <h2>Debit cards</h2>
+                        <h2>Credit cards</h2>
                         <p>Allow you to use credit that must be paid back to make purchases</p>
                         <ul>
                             <li>Account does not need to be positive to make purchases</li>
