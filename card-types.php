@@ -57,7 +57,7 @@
 
                     <?php
                     $cardName = 'Credit Card';
-                        card_types($cardName);
+                        card_types($cardName, null);
                     ?>
 
 
@@ -71,7 +71,7 @@
                     <!-- List group -->
                     <?php
 			         $cardName = 'Debit';
-			         card_types($cardName);
+			         card_types($cardName, null);
 		              ?>
 
                     <div id="travel-money-card" class="my-5">
@@ -84,7 +84,7 @@
                     <!-- List group -->
                     <?php
 			         $cardName = 'Travel Money Card';
-			         card_types($cardName);
+			         card_types($cardName, null);
 		             ?>
                 </div>
             </div>
