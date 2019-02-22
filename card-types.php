@@ -1,9 +1,6 @@
 <?php
-
     require 'scripts/conn.php';
-
     require_once 'scripts/functions.php';
-
 ?>
 
 <!DOCTYPE html>
