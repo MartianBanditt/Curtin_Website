@@ -112,7 +112,7 @@
             <div class="container accordion" id="accordionExample2">
                 <h2 class="mb-4 text-white">Learn more about Nationwide</h2>
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                <div class="row bg-third text-light p-2 m-auto question-box collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                     <h3 class="accordian-title">Can anyone be a member of Nationwide?</h3>
                 </div>
 
@@ -125,7 +125,7 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row bg-third text-light p-2 m-auto question-box collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
                     <h3 class="accordian-title">What benifits do members enjoy?</h3>
                 </div>
 
@@ -142,7 +142,7 @@
                 </div>
 
                 <!-- Question for user -->
-                <div class="row bg-red text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                <div class="row bg-third text-light p-2 m-auto question-box collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
                     <h3 class="accordian-title">Does Nationwide use my money ethically</h3>
                 </div>
 
