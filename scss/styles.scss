@@ -389,6 +389,32 @@ footer .row.mt-5:before {
     font-size: 48px;
 }
 
+/* Card selector styles
+--------------------------- */
+.show{
+    display: block;
+}
+
+.dont-show{
+    display:none;
+}
+
+
+.card-selector select{
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #4c4c4c;
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+}
+
+.card-selector .submit input{
+    margin-top:15px;
+}
+
 
 /* Card types */
 
