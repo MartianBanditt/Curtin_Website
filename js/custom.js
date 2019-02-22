@@ -23,3 +23,24 @@ $(function() {
   });
 
 });
+
+
+$('.layer-2').addClass('dont-show');
+$('.layer-3').addClass('dont-show');
+
+$("#card-type-interest").change(function(){
+     console.log( this.value );
+    $('.layer-2').addClass('dont-show');
+    $('.layer-3').addClass('dont-show');
+   $('#'+this.value).toggleClass('dont-show');
+
+});
+
+$(".layer-2 select").change(function(){
+     console.log( this.value );
+    $('.layer-3').addClass('dont-show');
+    $('.layer-3').addClass('dont-show');
+   $('#'+this.value).toggleClass('dont-show');
+});
+
+
