@@ -1,5 +1,10 @@
 <?php
-   require_once 'scripts/functions.php';
+    require 'scripts/conn.php';
+    require_once 'scripts/functions.php';
+
+    if(isset($_POST)){
+        $aquery = card_selector(0, $_POST);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -46,19 +51,19 @@
         </div>
         <div class="full-width-background py-5 bg-third">
             <div class="container">
-                <form class="row card-selector p-3">
-                    <div class="col-2 pr-2 p-0 py-2">
+                <form class="row card-selector p-3" action="find-a-service.php" method="post">
+                    <div class="col-sm-2 col-12 pr-2 p-0 py-2">
                         <label for="card-type-dc">I'm looking for a?</label>
                         <select id="card-type-dc" name="card-type-dc" required>
                             <option value="">Select</option>
 
-                            <option value="credit">Credit card</option>
+                            <option value="Credit Card">Credit card</option>
 
-                            <option value="debit">Debit card</option>
+                            <option value="Debit">Debit card</option>
 
                         </select>
                     </div>
-                    <div class="col-2 p-2">
+                    <div class="col-sm-2 col-12 p-2">
                         <label for="card-type-interest">I'm interested in?</label>
                         <select id="card-type-interest" name="card-type-interest" required>
 
@@ -72,7 +77,7 @@
                     </div>
 
                     <!-- Question layer 2 reward types -->
-                    <div class="col-2 p-2 layer-2" id="rewards-types">
+                    <div class="col-sm-2 col-12 p-2 layer-2" id="rewards-types">
                         <label for="card-type-reward-types">Reward types?</label>
                         <select id="card-type-reward-types" name="card-type-reward-types">
 
@@ -86,7 +91,7 @@
                     </div>
 
                     <!-- Question layer 2 saving money -->
-                    <div class="col-2 p-2 layer-2" id="saving">
+                    <div class="col-sm-2 col-12 p-2 layer-2" id="saving">
                         <label for="card-type-saving">Saving money</label>
                         <select id="card-type-saving" name="card-type-saving">
 
@@ -98,11 +103,11 @@
                     </div>
 
                     <!-- Question layer 2 reward types -->
-                    <div class="col-2 p-2 layer-2" id="ease">
+                    <div class="col-sm-2 col-12 p-2 layer-2" id="ease">
                         <label for="card-type-ease">I'll use this for</label>
                         <select id="card-type-ease" name="card-type-ease">
 
-                            <option value="select">Select</option>
+                            <option value>Select</option>
                             <option value="online">Shopping online</option>
                             <option value="instore">Shopping instore</option>
 
@@ -110,11 +115,11 @@
                     </div>
 
                     <!-- Question layer 3 reward types -->
-                    <div class="col-2 p-2 layer-3" id="reward-travel">
+                    <div class="col-sm-2 col-12 p-2 layer-3" id="reward-travel">
                         <label for="travel">I'll use this for</label>
                         <select id="travel" name="travel">
 
-                            <option value="select">Select</option>
+                            <option value>Select</option>
                             <option value="flights">Flights</option>
                             <option value="hotels">Hotels</option>
 
@@ -122,32 +127,41 @@
                     </div>
 
                     <!-- Question layer 3 reward types -->
-                    <div class="col-2 p-2 layer-3" id="reward-flexible">
+                    <div class="col-sm-2 col-12 p-2 layer-3" id="reward-flexible">
                         <label for="flexible">I'll use this for</label>
                         <select id="flexible" name="flexible">
 
-                            <option value="select">Select</option>
+                            <option value>Select</option>
                             <option value="travel-dining">Travel and dining</option>
                             <option value="travel-dining">Hotels</option>
 
                         </select>
                     </div>
 
-                <div class="col-2 submit pt-4 align-item-bottom">
-                    <input class="btn btn-primary btn-lg" type="submit" name="submit-card" value="Submit">
-                </div>
+                    <div class="col-sm-2 col-12 submit pt-4 align-item-bottom">
+                        <input class="btn btn-primary btn-lg" type="submit" name="submit-card" value="Submit">
+                    </div>
                 </form>
             </div>
         </div>
-
-
-
-        <div class="full-width-background my-5">
+        <div class="full-width-background mt-5">
             <div class="container">
-                <h3>For after a user has found a product they are interested in</h3>
-                <?php booking_form(); ?>
+
+                <?php if(isset($_POST)){
+                    card_types(0,$aquery);
+                } ?>
             </div>
         </div>
+        <?php if(!empty($_POST)){
+
+        echo '<div class="full-width-background my-5">';
+            echo '<div class="container">';
+                echo '<h3>Make a booking to talk about getting a card</h3>';
+                booking_form();
+            echo '</div>';
+        echo '</div>';
+        }
+        ?>
 
 
 
