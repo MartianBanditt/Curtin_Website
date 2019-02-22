@@ -239,4 +239,62 @@ function booking_form(){
 BOOKINGFORM;
     
 }
+
+function card_types($cardName){
+
+    $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$cardName'";
+
+    global $conn;
+
+    $cards = mysqli_query($conn, $cardType);
+    // Loops through the cards and outputs Card names as headers
+    // href needs to match to a tab-pane
+    // The first should have a class of active but I can always do that with a bit of css or jquery later
+
+    echo "<div class='list-group row-type mb-0' role='tablist'>";
+
+        $id = 'card';
+
+        while ($row = $cards->fetch_array()){
+            echo '<a class="list-group-item list-group-item-action cards" data-toggle="list" href="#'.$id.$row['id'].'" role="tab">'.$row["card_name"].'</a>';
+        }
+
+    echo "</div>";
+
+    mysqli_data_seek($cards, 0);
+
+    $id = 'card';
+    // Loops through the card types and outputs fields to a display box
+    echo '<div class="tab-content">';
+
+    $invis=1;
+        while ($row = $cards->fetch_array()){
+            echo '<div class="tab-pane p-sm-5 p-3 bg-fourth '.($invis == 1 ? "show active" : "").'" id="'.$id.$row['id'].'" role="tabpanel">';
+                echo '<h3>'.$row["card_name"].'</h3>';
+                echo '<div class="row my-4">';
+                    echo '<div class="col">';
+                        echo '<h4>At a glance:</h4>';
+                        echo '<p>'.$row["at_a_glance"].'</p>';
+                    echo "</div>";
+
+                    echo "<div class='col'>";
+                        echo "<h5>New Member Offer</h5>";
+                        echo '<p>'.$row["new_member_offer"].'</p>';
+                    echo "</div>";
+
+                    echo "<div class='col'>";
+                        echo "<h5>Features</h5>";
+                        echo '<p>'.$row["features"].'</p>';
+                    echo "</div>";
+                echo "</div>";
+
+                echo "<div>";
+                    echo "<h5>Annual Fees</h5>";
+                    echo '<p>'.$row['annual_fee'].'</p>';
+                echo "</div>";
+            echo "</div>";
+            $invis=2;
+        }
+    echo '</div>';
+}
 ?>
