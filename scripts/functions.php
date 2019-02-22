@@ -254,9 +254,10 @@ function card_types($cardName){
     echo "<div class='list-group row-type mb-0' role='tablist'>";
 
         $id = 'card';
-
+        $displayfirst = 1;
         while ($row = $cards->fetch_array()){
-            echo '<a class="list-group-item list-group-item-action cards" data-toggle="list" href="#'.$id.$row['id'].'" role="tab">'.$row["card_name"].'</a>';
+            echo '<a class="list-group-item list-group-item-action cards'.($displayfirst == 1 ? "show active" : "").'" data-toggle="list" href="#'.$id.$row['id'].'" role="tab">'.$row["card_name"].'</a>';
+            $displayfirst=2;
         }
 
     echo "</div>";
