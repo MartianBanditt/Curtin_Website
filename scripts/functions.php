@@ -74,7 +74,6 @@ NAV;
 }
 // footer content
 function footer(){
-
     $date = date("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME']));
     echo <<<FOOTER
     <div class="full-width-background bg-fourth mt-5">
@@ -132,9 +131,7 @@ function footer(){
             <div>&copy;<script>document.write(new Date().getFullYear()); </script> Jason Lane, James Eastoe-Collins. Last modified $date</div>
             <div>Disclaimer: This website is not a real website and is been created as part of an assignment in an approved course of study for CurtinUniversity and contains copyright material not created by the author. All copyright material usedremains copyright of the respective owners and has been used here pursuant to Section 40 of theCopyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced withoutconsent of the original copyright owners. See code comments for references.</div>
          </div>
-
      </div>
-
 FOOTER;
 }
 // javascript files for footer navigation
@@ -239,21 +236,15 @@ function booking_form(){
 BOOKINGFORM;
     
 }
-
 function card_types($cardName,$aquery){
-
     $cardType;
-
     if ($aquery == null){
         $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$cardName'";
     }else{
         $cardType = $aquery;
     }
-
     global $conn;
-
     $cards = mysqli_query($conn, $cardType);
-
     if(!empty($_POST) && mysqli_num_rows($cards) == 0){
         echo '<h2 class="warning">Sorry we couldnt find any cards<h2>';
     }
@@ -261,22 +252,17 @@ function card_types($cardName,$aquery){
     // href needs to match to a tab-pane
     // The first should have a class of active but I can always do that with a bit of css or jquery later
     echo "<div class='list-group row-type mb-0' role='tablist'>";
-
         $id = 'card';
         $displayfirst = 1;
         while ($row = $cards->fetch_array()){
             echo '<a class="list-group-item list-group-item-action cards'.($displayfirst == 1 ? "show active" : "").'" data-toggle="list" href="#'.$id.$row['id'].'" role="tab">'.$row["card_name"].'</a>';
             $displayfirst=2;
         }
-
     echo "</div>";
-
     mysqli_data_seek($cards, 0);
-
     $id = 'card';
     // Loops through the card types and outputs fields to a display box
     echo '<div class="tab-content">';
-
     $invis=1;
         while ($row = $cards->fetch_array()){
             echo '<div class="tab-pane p-sm-5 p-3 bg-fourth '.($invis == 1 ? "show active" : "").'" id="'.$id.$row['id'].'" role="tabpanel">';
@@ -286,42 +272,33 @@ function card_types($cardName,$aquery){
                         echo '<h4>At a glance:</h4>';
                         echo '<p>'.$row["at_a_glance"].'</p>';
                     echo "</div>";
-
                     echo "<div class='col'>";
-                        echo "<h5>New Member Offer</h5>";
+                        echo "<h4>New Member Offer:</h4>";
                         echo '<p>'.$row["new_member_offer"].'</p>';
                     echo "</div>";
-
                     echo "<div class='col'>";
-                        echo "<h5>Features</h5>";
+                        echo "<h4>Features:</h4>";
                         echo '<p>'.$row["features"].'</p>';
                     echo "</div>";
                 echo "</div>";
-
                 echo "<div>";
+					echo '<img style="float:right;" src="data:image/jpeg;base64,'.base64_encode( $row['images'] ).'"/>';
                     echo "<h5>Annual Fees</h5>";
-                    echo '<p>'.$row['annual_fee'].'</p>';
-                echo "</div>";
+                    echo '<p>'.$row['annual_fee'];
+                echo "</p></div>";
             echo "</div>";
             $invis=2;
         }
     echo '</div>';
 }
-
 function card_selector($card){
-
-
-
     if (!empty($_POST["card-type-dc"])){
         $card_type1 = $_POST["card-type-dc"];
     }
     $i_value = "";
     $reward_type = "";
     $type_of_perks = "";
-
     if(!empty($_POST)){
-
-
     if($_POST["card-type-interest"] == "rewards-types" and !empty($_POST["card-type-interest"])){
         $i_value = "Rewards and Perks";
     } elseif($_POST["card-type-interest"] == "saving" and !empty($_POST["card-type-interest"])){
@@ -329,7 +306,6 @@ function card_selector($card){
     }elseif($_POST["card-type-interest"] == "ease" and !empty($_POST["card-type-interest"])){
         $i_value = "ease";
     }
-
     if($_POST["card-type-reward-types"] == "reward-cash-back" and !empty($_POST["card-type-reward-types"])){
         $reward_type = "Cash Back";
     } elseif($_POST["card-type-reward-types"] == "reward-travel" and !empty($_POST["card-type-reward-types"])){
@@ -345,13 +321,11 @@ function card_selector($card){
     }elseif($_POST["card-type-ease"] == "low-fees" and !empty($_POST["card-type-ease"])){
         $reward_type = "Shopping In-Store";
     }
-
     if($_POST["travel"] == "flights" and !empty($_POST["travel"])){
         $type_of_perks = "Flights";
     }elseif($_POST["travel"] == "hotels" and !empty($_POST["travel"])){
         $reward_type = "Hotels";
     }
-
     if (!empty($type_of_perks)){
         return $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$card_type1' AND i_value = '$i_value' AND reward_type = '$reward_type' AND type_of_perks = '$type_of_perks'";
     }elseif(!empty($reward_type)){
@@ -359,9 +333,6 @@ function card_selector($card){
     }else{
         return $cardType = "SELECT * FROM `Account_Types` WHERE card_type = '$card_type1' AND i_value = '$i_value'";
     }
-
     }
 }
-
-
 ?>
