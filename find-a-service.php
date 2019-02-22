@@ -46,11 +46,11 @@
         </div>
         <div class="full-width-background py-5 bg-third">
             <div class="container">
-                <form class="row p-3">
+                <form class="row card-selector p-3">
                     <div class="col-2 pr-2 p-0 py-2">
                         <label for="card-type-dc">I'm looking for a?</label>
-                        <select id="card-type-dc" name="card-type-dc">
-                            <option value="select">Select</option>
+                        <select id="card-type-dc" name="card-type-dc" required>
+                            <option value="">Select</option>
 
                             <option value="credit">Credit card</option>
 
@@ -60,9 +60,9 @@
                     </div>
                     <div class="col-2 p-2">
                         <label for="card-type-interest">I'm interested in?</label>
-                        <select id="card-type-interest" name="card-type-interest">
+                        <select id="card-type-interest" name="card-type-interest" required>
 
-                            <option value="select">Select</option>
+                            <option value="">Select</option>
 
                             <option value="rewards-types">Rewards and perks</option>
                             <option value="saving">Saving money</option>
@@ -72,21 +72,21 @@
                     </div>
 
                     <!-- Question layer 2 reward types -->
-                    <div class="col-2 p-2" id="reward-types">
+                    <div class="col-2 p-2 layer-2" id="rewards-types">
                         <label for="card-type-reward-types">Reward types?</label>
                         <select id="card-type-reward-types" name="card-type-reward-types">
 
                             <option value="select">Select</option>
 
-                            <option value="cash-back">Cash Back</option>
-                            <option value="travel">Travel</option>
-                            <option value="flexible">Flexible</option>
+                            <option value="reward-cash-back">Cash Back</option>
+                            <option value="reward-travel">Travel</option>
+                            <option value="reward-flexible">Flexible</option>
 
                         </select>
                     </div>
 
                     <!-- Question layer 2 saving money -->
-                    <div class="col-2 p-2" id="saving">
+                    <div class="col-2 p-2 layer-2" id="saving">
                         <label for="card-type-saving">Saving money</label>
                         <select id="card-type-saving" name="card-type-saving">
 
@@ -98,7 +98,7 @@
                     </div>
 
                     <!-- Question layer 2 reward types -->
-                    <div class="col-2 p-2" id="ease">
+                    <div class="col-2 p-2 layer-2" id="ease">
                         <label for="card-type-ease">I'll use this for</label>
                         <select id="card-type-ease" name="card-type-ease">
 
@@ -108,6 +108,31 @@
 
                         </select>
                     </div>
+
+                    <!-- Question layer 3 reward types -->
+                    <div class="col-2 p-2 layer-3" id="reward-travel">
+                        <label for="travel">I'll use this for</label>
+                        <select id="travel" name="travel">
+
+                            <option value="select">Select</option>
+                            <option value="flights">Flights</option>
+                            <option value="hotels">Hotels</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Question layer 3 reward types -->
+                    <div class="col-2 p-2 layer-3" id="reward-flexible">
+                        <label for="flexible">I'll use this for</label>
+                        <select id="flexible" name="flexible">
+
+                            <option value="select">Select</option>
+                            <option value="travel-dining">Travel and dining</option>
+                            <option value="travel-dining">Hotels</option>
+
+                        </select>
+                    </div>
+
                 <div class="col-2 submit pt-4 align-item-bottom">
                     <input class="btn btn-primary btn-lg" type="submit" name="submit-card" value="Submit">
                 </div>
