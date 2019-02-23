@@ -187,6 +187,7 @@ function contact_form(){
 CONTACTFORM;
 }
 function booking_form(){
+    $date = date('Y-m-d');
     echo <<<BOOKINGFORM
     
         <!-- Customer details and payment details form section -->
@@ -208,7 +209,7 @@ function booking_form(){
                 </div>
                 <div class="select-box form-group">
                     <label for="date">Date</label>
-                    <input name="date" class="form-control booking-date" type="date" id="date"  required />
+                    <input name="date" class="form-control booking-date" type="date" id="date" min="$date" required />
                 </div>
                 
                 
@@ -268,24 +269,28 @@ function card_types($cardName,$aquery){
             echo '<div class="tab-pane p-sm-5 p-3 bg-fourth '.($invis == 1 ? "show active" : "").'" id="'.$id.$row['id'].'" role="tabpanel">';
                 echo '<h3>'.$row["card_name"].'</h3>';
                 echo '<div class="row my-4">';
-                    echo '<div class="col">';
+                    echo '<div class="col-md-4 col-12">';
                         echo '<h4>At a glance:</h4>';
                         echo '<p>'.$row["at_a_glance"].'</p>';
                     echo "</div>";
-                    echo "<div class='col'>";
+                    echo "<div class='col-md-4 col-12'>";
                         echo "<h4>New Member Offer:</h4>";
                         echo '<p>'.$row["new_member_offer"].'</p>';
                     echo "</div>";
-                    echo "<div class='col'>";
+                    echo "<div class='col-md-4 col-12'>";
                         echo "<h4>Features:</h4>";
                         echo '<p>'.$row["features"].'</p>';
                     echo "</div>";
                 echo "</div>";
-                echo "<div>";
-					echo '<img style="float:right;" src="data:image/jpeg;base64,'.base64_encode( $row['images'] ).'"/>';
-                    echo "<h5>Annual Fees</h5>";
-                    echo '<p>'.$row['annual_fee'];
-                echo "</p></div>";
+                echo '<div class="row my-4">';
+                    echo "<div class='col-sm-4 col-12'>";
+                        echo "<h5>Annual Fees</h5>";
+                        echo '<p>'.$row['annual_fee'].'</p>';
+                    echo "</div>";
+                    echo "<div class='col-sm-4 col-9'>";
+					   echo '<img alt="Credit Card example" class="card-image" src="data:image/jpeg;base64,'.base64_encode( $row['images'] ).'"/>';
+                    echo "</div>";
+                echo '</div>';
             echo "</div>";
             $invis=2;
         }
