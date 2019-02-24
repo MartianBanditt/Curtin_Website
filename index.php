@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="row" id="front-help">
 
-                    <div class="col mb-sm-0 mb-3">
+                    <div class="col-12 col-md-6 mb-md-0 mb-3">
 
                         <div class="card mb-sm-4 mb-3">
                             <div class="card-header bg-panel-b text-white">
@@ -60,8 +60,8 @@
                             <div class="card-body">
                                 <ul class="px-3">
                                     <li class="py-3"><a href="card-types.php#credit-cards" title="Credit Cards">Credit cards</a></li>
-                                    <li class="py-3"><a href="card-types.php#debit-cards" title="Debit Card">Debit Cards</a></li>
-                                    <li class="pt-3"><a href="card-types.php#travel-money-cards" title="Travel money Card">Travel money cards</a></li>
+                                    <li class="py-3"><a href="card-types.php#debit-card" title="Debit Card">Debit Cards</a></li>
+                                    <li class="pt-3"><a href="card-types.php#travel-money-card" title="Travel money Card">Travel money cards</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,8 +83,8 @@
 
                     </div>
 
-                    <div class="col mb-sm-0 mb-3">
-
+                    <div class="col-12 col-md-6 mb-sm-0 mb-3">
+                        <img src="media/cafe.png" class="img-panel-front" alt="Women at cafe with coffee">
                         <div class="bg-third p-sm-5 p-4 border-bottom-4">
                             <div class="">
                                 <h2>Need help understanding your options?</h2>
