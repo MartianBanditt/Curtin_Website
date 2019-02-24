@@ -6938,6 +6938,9 @@ a.text-dark:hover, a.text-dark:focus {
 .text-red {
   color: #ee2124; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
@@ -7104,10 +7107,15 @@ nav ul > li:hover > a::before {
 
 /* front page styles
 ----------------------- */
-#front-help > div:last-of-type > div {
+#front-help > div:first-of-type {
   display: flex;
-  align-items: center;
-  height: 100%; }
+  flex-direction: column; }
+
+#front-help > div > div:first-of-type {
+  flex: 40%; }
+
+#front-help > div > div:last-of-type {
+  flex: 60%; }
 
 .card-body ul {
   list-style: none; }
@@ -7131,6 +7139,11 @@ nav ul > li:hover > a::before {
 .fa-cta-front {
   font-size: 3rem;
   color: #464646; }
+
+.img-panel-front {
+  max-width: 100%;
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  background-color: #c0cedd; }
 
 /* Card selector styles
 ------------------------- */
@@ -7281,7 +7294,9 @@ footer .row.mt-5:before {
   #card-hero > div > div > div {
     background-color: rgba(255, 255, 255, 0.6); }
   .list-group.row-type {
-    flex-direction: column; } }
+    flex-direction: column; }
+  #front-help > div:first-of-type {
+    display: block; } }
 
 @media (min-width: 576px) {
   .products-cards > div:first-of-type {
@@ -7320,7 +7335,11 @@ footer .row.mt-5:before {
   #card-hero > div > div > div {
     background-color: rgba(255, 255, 255, 0.7); }
   #cta {
-    background: linear-gradient(45deg, #0052a0 30%, #50a7fc 110%); } }
+    background: linear-gradient(45deg, #0052a0 30%, #50a7fc 110%); }
+  .fa-large-front {
+    font-size: 7em; }
+  .fa-large-front:last-of-type i {
+    font-size: 5rem; } }
 
 @media (min-width: 992px) {
   .image-quote {
@@ -7333,7 +7352,11 @@ footer .row.mt-5:before {
     width: 520px; }
   #home-bg-img,
   #card-hero {
-    padding: 150px; } }
+    padding: 150px; }
+  .fa-large-front {
+    font-size: 9em; }
+  .fa-large-front:last-of-type i {
+    font-size: 6rem; } }
 
 @media (min-width: 1200px) {
   .image-quote {

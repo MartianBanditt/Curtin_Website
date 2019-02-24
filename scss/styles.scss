@@ -25,6 +25,7 @@ $card-bg: url("../media/card6.jpg");
     background-color: $bg-color-blue;
 }
 
+
 // main logo blue
 
 .bg-third {
@@ -37,6 +38,7 @@ $card-bg: url("../media/card6.jpg");
     background-color: $bg-color-light-blue;
 }
 
+// nationwide red colors
 .bg-red {
     background-color: $nwide-red;
 }
@@ -45,7 +47,10 @@ $card-bg: url("../media/card6.jpg");
     color: $nwide-red;
 }
 
-//light blue
+// smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
 
 // fonts
 body {
@@ -251,10 +256,17 @@ nav ul > li:hover > a::before {
 
 /* front page styles
 ----------------------- */
-#front-help > div:last-of-type > div {
-    display: flex;
-    align-items: center;
-    height: 100%;
+#front-help >div:first-of-type{
+    display:flex;
+    flex-direction:column;
+}
+
+#front-help > div > div:first-of-type{
+    flex:40%;
+}
+
+#front-help > div > div:last-of-type{
+    flex:60%;
 }
 
 .card-body ul {
@@ -286,6 +298,11 @@ nav ul > li:hover > a::before {
     color: #464646;
 }
 
+.img-panel-front{
+    max-width:100%;
+    border-radius:calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    background-color:$bg-third;
+}
 /* Card selector styles
 ------------------------- */
 #card-hero{
@@ -483,6 +500,10 @@ footer .row.mt-5:before {
     .list-group.row-type {
         flex-direction: column;
     }
+    #front-help >div:first-of-type{
+    display:block;
+    }
+
 }
 
 @media (min-width: 576px) {
@@ -498,14 +519,12 @@ footer .row.mt-5:before {
     .list-group.row-type {
         flex-direction: column;
     }
-
 }
 
 @media (min-width: 768px) {
     .products-cards > div:first-of-type {
         border-right: 2px solid $nwide-red;
         border-bottom: none;
-
     }
 
     .list-group.row-type {
@@ -550,6 +569,14 @@ footer .row.mt-5:before {
     #cta{
         background: linear-gradient(45deg, #0052a0 30%, #50a7fc 110%);
     }
+
+    .fa-large-front{
+        font-size: 7em;
+    }
+
+    .fa-large-front:last-of-type i{
+        font-size:5rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -567,6 +594,12 @@ footer .row.mt-5:before {
     #home-bg-img,
     #card-hero{
         padding:150px;
+    }
+    .fa-large-front{
+        font-size: 9em;
+    }
+        .fa-large-front:last-of-type i{
+        font-size:6rem;
     }
 
 }
