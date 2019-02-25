@@ -1,4 +1,3 @@
-<!-- Move this to a function file -->
 <?php
    require_once 'scripts/functions.php';
 ?>
